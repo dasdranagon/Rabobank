@@ -8,9 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		5FBE1AF724971C941B258151 /* Pods_Rabobank_Tests_RabobankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD904472E6E80EBCD37C6B5 /* Pods_Rabobank_Tests_RabobankTests.framework */; };
+		BC573A4D22203FC700093E94 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A4C22203FC700093E94 /* AppDependencies.swift */; };
+		BC573A4F222040EB00093E94 /* CommonDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A4E222040EB00093E94 /* CommonDependencies.swift */; };
+		BC573A59222041AE00093E94 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A54222041AE00093E94 /* BaseWireframe.swift */; };
+		BC573A5A222041AE00093E94 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A55222041AE00093E94 /* Wireframe.swift */; };
+		BC573A5B222041AE00093E94 /* StandardNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A57222041AE00093E94 /* StandardNavigator.swift */; };
+		BC573A5C222041AE00093E94 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A58222041AE00093E94 /* Navigator.swift */; };
+		BC573A5E222042FB00093E94 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A5D222042FB00093E94 /* Assembly.swift */; };
+		BC573A602220431D00093E94 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A5F2220431D00093E94 /* ViewControllerFactory.swift */; };
+		BC573A632220446E00093E94 /* ListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A622220446E00093E94 /* ListAssembly.swift */; };
 		BC98EFEB22202DD300607734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98EFEA22202DD300607734 /* AppDelegate.swift */; };
-		BC98EFED22202DD300607734 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98EFEC22202DD300607734 /* ViewController.swift */; };
-		BC98EFF022202DD300607734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFEE22202DD300607734 /* Main.storyboard */; };
 		BC98EFF222202DD400607734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF122202DD400607734 /* Assets.xcassets */; };
 		BC98EFF522202DD400607734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF322202DD400607734 /* LaunchScreen.storyboard */; };
 		BC98F00022202DD400607734 /* RabobankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98EFFF22202DD400607734 /* RabobankTests.swift */; };
@@ -34,10 +41,17 @@
 		6BD904472E6E80EBCD37C6B5 /* Pods_Rabobank_Tests_RabobankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rabobank_Tests_RabobankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F273FE6B36538C4C96315DE /* Pods-Rabobank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rabobank.release.xcconfig"; path = "Target Support Files/Pods-Rabobank/Pods-Rabobank.release.xcconfig"; sourceTree = "<group>"; };
 		AF55DD5836A1E1277D9DDD80 /* Pods-Rabobank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rabobank.debug.xcconfig"; path = "Target Support Files/Pods-Rabobank/Pods-Rabobank.debug.xcconfig"; sourceTree = "<group>"; };
+		BC573A4C22203FC700093E94 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		BC573A4E222040EB00093E94 /* CommonDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDependencies.swift; sourceTree = "<group>"; };
+		BC573A54222041AE00093E94 /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
+		BC573A55222041AE00093E94 /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
+		BC573A57222041AE00093E94 /* StandardNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardNavigator.swift; sourceTree = "<group>"; };
+		BC573A58222041AE00093E94 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		BC573A5D222042FB00093E94 /* Assembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		BC573A5F2220431D00093E94 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		BC573A622220446E00093E94 /* ListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAssembly.swift; sourceTree = "<group>"; };
 		BC98EFE722202DD300607734 /* Rabobank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rabobank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC98EFEA22202DD300607734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC98EFEC22202DD300607734 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BC98EFEF22202DD300607734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC98EFF122202DD400607734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC98EFF422202DD400607734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC98EFF622202DD400607734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,8 +88,58 @@
 				08399314E9D00A0207B63971 /* Pods-Rabobank-Tests-RabobankTests.debug.xcconfig */,
 				59AE56651FAAB9C14F53BA5E /* Pods-Rabobank-Tests-RabobankTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BC573A502220414E00093E94 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A52222041AE00093E94 /* Routing */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BC573A512220415C00093E94 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A612220443000093E94 /* List */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		BC573A52222041AE00093E94 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A53222041AE00093E94 /* Wireframe */,
+				BC573A56222041AE00093E94 /* Navigator */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		BC573A53222041AE00093E94 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A54222041AE00093E94 /* BaseWireframe.swift */,
+				BC573A55222041AE00093E94 /* Wireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		BC573A56222041AE00093E94 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A57222041AE00093E94 /* StandardNavigator.swift */,
+				BC573A58222041AE00093E94 /* Navigator.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
+		BC573A612220443000093E94 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A622220446E00093E94 /* ListAssembly.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 		BC98EFDE22202DD300607734 = {
@@ -102,8 +166,12 @@
 			isa = PBXGroup;
 			children = (
 				BC98EFEA22202DD300607734 /* AppDelegate.swift */,
-				BC98EFEC22202DD300607734 /* ViewController.swift */,
-				BC98EFEE22202DD300607734 /* Main.storyboard */,
+				BC573A4C22203FC700093E94 /* AppDependencies.swift */,
+				BC573A4E222040EB00093E94 /* CommonDependencies.swift */,
+				BC573A502220414E00093E94 /* Common */,
+				BC573A5F2220431D00093E94 /* ViewControllerFactory.swift */,
+				BC573A5D222042FB00093E94 /* Assembly.swift */,
+				BC573A512220415C00093E94 /* Screens */,
 				BC98EFF122202DD400607734 /* Assets.xcassets */,
 				BC98EFF322202DD400607734 /* LaunchScreen.storyboard */,
 				BC98EFF622202DD400607734 /* Info.plist */,
@@ -215,7 +283,6 @@
 			files = (
 				BC98EFF522202DD400607734 /* LaunchScreen.storyboard in Resources */,
 				BC98EFF222202DD400607734 /* Assets.xcassets in Resources */,
-				BC98EFF022202DD300607734 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,8 +371,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC98EFED22202DD300607734 /* ViewController.swift in Sources */,
+				BC573A4D22203FC700093E94 /* AppDependencies.swift in Sources */,
+				BC573A602220431D00093E94 /* ViewControllerFactory.swift in Sources */,
+				BC573A59222041AE00093E94 /* BaseWireframe.swift in Sources */,
+				BC573A5A222041AE00093E94 /* Wireframe.swift in Sources */,
+				BC573A5E222042FB00093E94 /* Assembly.swift in Sources */,
+				BC573A5B222041AE00093E94 /* StandardNavigator.swift in Sources */,
+				BC573A5C222041AE00093E94 /* Navigator.swift in Sources */,
 				BC98EFEB22202DD300607734 /* AppDelegate.swift in Sources */,
+				BC573A632220446E00093E94 /* ListAssembly.swift in Sources */,
+				BC573A4F222040EB00093E94 /* CommonDependencies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,14 +403,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BC98EFEE22202DD300607734 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC98EFEF22202DD300607734 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BC98EFF322202DD400607734 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
