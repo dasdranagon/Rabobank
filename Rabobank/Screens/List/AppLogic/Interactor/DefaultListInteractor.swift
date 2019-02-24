@@ -9,5 +9,18 @@
 import Foundation
 
 class DefaultListInteractor: ListInteractor {
+    private let source: TextSource
+    private let parser: TextParser
     
+    weak var output: ListInteractorOutput!
+    weak var errorHandler: ErrorHandler?
+    
+    init(source: TextSource, parser: TextParser) {
+        self.source = source
+        self.parser = parser
+    }
+    
+    func fetch() {
+        
+    }
 }

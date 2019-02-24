@@ -9,9 +9,9 @@
 import Foundation
 
 protocol ListInteractor: AnyObject {
-    
+    func fetch()
 }
 
 protocol ListInteractorOutput: AnyObject {
-    
+    func update(items:[Person])
 }

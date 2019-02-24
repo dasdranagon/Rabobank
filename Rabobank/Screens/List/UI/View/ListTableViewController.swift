@@ -70,3 +70,5 @@ extension ListTableViewController: ListView {
         }
     }
 }
+
+extension ListTableViewController: ErrorHandler {}

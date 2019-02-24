@@ -1,5 +1,5 @@
 //
-//  TextSource.swift
+//  TextParser.swift
 //  Rabobank
 //
 //  Created by Dennis Skokov on 24/02/2019.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol TextSource {
-    typealias Response = (String?)->()
-    func fetch(response: Response)
+protocol TextParser {
+    typealias Row = [String]
+    func parse(text: String) throws -> [Row]
 }

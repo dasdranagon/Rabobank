@@ -15,7 +15,7 @@ class BundleTextSource {
 }
 
 extension BundleTextSource: TextSource {
-    func fetch(response: (String) -> ()) {
+    func fetch(response: (String?) -> ()) {
         
     }
 }

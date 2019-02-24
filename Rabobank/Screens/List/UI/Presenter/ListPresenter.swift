@@ -10,7 +10,13 @@ import Foundation
 
 class ListPresenter {
     weak var view: ListView!
-//    weak var interactor: ListInteractor!
+    weak var interactor: ListInteractor!
+}
+
+extension ListPresenter: ListInteractorOutput {
+    func update(items: [Person]) {
+        
+    }
 }
 
 extension ListPresenter: ListEventsHandler {
@@ -26,22 +32,22 @@ extension ListPresenter: ListEventsHandler {
     private func load() {
         view.processing(show: true)
         let i1 = ListDisplayItem(
-            fullName: "First",
+            fullName: "Name",
             dateOfBirth: "11.03.2011",
             issueCount: "1")
         
         let i2 = ListDisplayItem(
-            fullName: "First 2",
+            fullName: "Name 2",
             dateOfBirth: "11.03.2010",
             issueCount: "2")
         
         let i3 = ListDisplayItem(
-            fullName: "First4",
+            fullName: "Name 3",
             dateOfBirth: "11.03.2018",
             issueCount: "3")
         
         let i4 = ListDisplayItem(
-            fullName: "First4",
+            fullName: "Name 4",
             dateOfBirth: "11.03.2014",
             issueCount: "4")
         

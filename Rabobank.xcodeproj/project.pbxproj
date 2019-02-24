@@ -30,6 +30,9 @@
 		BC573A8C222284AC00093E94 /* DefaultListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A8B222284AC00093E94 /* DefaultListInteractor.swift */; };
 		BC573A902222850A00093E94 /* TextSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A8F2222850A00093E94 /* TextSource.swift */; };
 		BC573A92222285E400093E94 /* BundleTextSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A91222285E400093E94 /* BundleTextSource.swift */; };
+		BC573A94222286B800093E94 /* TextParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A93222286B800093E94 /* TextParser.swift */; };
+		BC573A9722228B5600093E94 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9622228B5600093E94 /* ErrorHandler.swift */; };
+		BC573A9922228D7400093E94 /* CSVTextParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9822228D7400093E94 /* CSVTextParser.swift */; };
 		BC98EFEB22202DD300607734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98EFEA22202DD300607734 /* AppDelegate.swift */; };
 		BC98EFF222202DD400607734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF122202DD400607734 /* Assets.xcassets */; };
 		BC98EFF522202DD400607734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF322202DD400607734 /* LaunchScreen.storyboard */; };
@@ -76,6 +79,9 @@
 		BC573A8B222284AC00093E94 /* DefaultListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultListInteractor.swift; sourceTree = "<group>"; };
 		BC573A8F2222850A00093E94 /* TextSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSource.swift; sourceTree = "<group>"; };
 		BC573A91222285E400093E94 /* BundleTextSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleTextSource.swift; sourceTree = "<group>"; };
+		BC573A93222286B800093E94 /* TextParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextParser.swift; sourceTree = "<group>"; };
+		BC573A9622228B5600093E94 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		BC573A9822228D7400093E94 /* CSVTextParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVTextParser.swift; sourceTree = "<group>"; };
 		BC98EFE722202DD300607734 /* Rabobank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rabobank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC98EFEA22202DD300607734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC98EFF122202DD400607734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +126,7 @@
 		BC573A502220414E00093E94 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BC573A9522228B3500093E94 /* ErrorHandling */,
 				BC573A822221DB4A00093E94 /* Models */,
 				BC573A52222041AE00093E94 /* Routing */,
 			);
@@ -272,6 +279,8 @@
 		BC573A8D222284DC00093E94 /* Parser */ = {
 			isa = PBXGroup;
 			children = (
+				BC573A93222286B800093E94 /* TextParser.swift */,
+				BC573A9822228D7400093E94 /* CSVTextParser.swift */,
 			);
 			path = Parser;
 			sourceTree = "<group>";
@@ -283,6 +292,14 @@
 				BC573A91222285E400093E94 /* BundleTextSource.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		BC573A9522228B3500093E94 /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A9622228B5600093E94 /* ErrorHandler.swift */,
+			);
+			path = ErrorHandling;
 			sourceTree = "<group>";
 		};
 		BC98EFDE22202DD300607734 = {
@@ -521,6 +538,7 @@
 				BC573A5A222041AE00093E94 /* Wireframe.swift in Sources */,
 				BC573A5E222042FB00093E94 /* Assembly.swift in Sources */,
 				BC573A902222850A00093E94 /* TextSource.swift in Sources */,
+				BC573A94222286B800093E94 /* TextParser.swift in Sources */,
 				BC573A7F222053A500093E94 /* ListEventsHandler.swift in Sources */,
 				BC573A8A2222846400093E94 /* ListInteractor.swift in Sources */,
 				BC573A842221DB6200093E94 /* Person.swift in Sources */,
@@ -535,8 +553,10 @@
 				BC98EFEB22202DD300607734 /* AppDelegate.swift in Sources */,
 				BC573A7922204BA900093E94 /* ListView.swift in Sources */,
 				BC573A72222047C500093E94 /* ListWireframe.swift in Sources */,
+				BC573A9722228B5600093E94 /* ErrorHandler.swift in Sources */,
 				BC573A632220446E00093E94 /* ListAssembly.swift in Sources */,
 				BC573A4F222040EB00093E94 /* CommonDependencies.swift in Sources */,
+				BC573A9922228D7400093E94 /* CSVTextParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
