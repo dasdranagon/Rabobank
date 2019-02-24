@@ -2,12 +2,11 @@
 //  RabobankTests.swift
 //  RabobankTests
 //
-//  Created by Dennis Skokov on 22/02/2019.
+//  Created by Dennis Skokov on 25/02/2019.
 //  Copyright © 2019 Dennis Skokov. All rights reserved.
 //
 
 import XCTest
-@testable import Rabobank
 
 class RabobankTests: XCTestCase {
 

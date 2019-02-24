@@ -15,5 +15,5 @@ enum NavigationMethod {
 
 protocol Navigator: AnyObject {
     func present(viewController: UIViewController, navigationMethod: NavigationMethod)
-    func dusmiss()
+    func dismiss()
 }

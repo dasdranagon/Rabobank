@@ -23,7 +23,7 @@ class StandardNavigator: Navigator {
         }
     }
     
-    func dusmiss() {
+    func dismiss() {
         rootNavigationController?.popViewController(animated: true)
     }
 }
