@@ -51,7 +51,7 @@ extension AppDependencies {
 
 extension AppDependencies {
     private mutating func setupDependencies() {
-//        appInitialWireframe = assemblies.list.wireframe
+        appInitialWireframe = assemblies.list.wireframe
     }
     
     private func injectDependencies() {
