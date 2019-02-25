@@ -7,16 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6DD430D00D89810F86C506FA /* libPods-Rabobank-Tests-RabobankTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67312B970D0F4AD8EBBE7D6E /* libPods-Rabobank-Tests-RabobankTests.a */; };
+		BC573A4D22203FC700093E94 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A4C22203FC700093E94 /* AppDependencies.swift */; };
+		BC573A4F222040EB00093E94 /* CommonDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A4E222040EB00093E94 /* CommonDependencies.swift */; };
+		BC573A59222041AE00093E94 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A54222041AE00093E94 /* BaseWireframe.swift */; };
+		BC573A5A222041AE00093E94 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A55222041AE00093E94 /* Wireframe.swift */; };
+		BC573A5B222041AE00093E94 /* StandardNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A57222041AE00093E94 /* StandardNavigator.swift */; };
+		BC573A5C222041AE00093E94 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A58222041AE00093E94 /* Navigator.swift */; };
+		BC573A5E222042FB00093E94 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A5D222042FB00093E94 /* Assembly.swift */; };
+		BC573A602220431D00093E94 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A5F2220431D00093E94 /* ViewControllerFactory.swift */; };
+		BC573A632220446E00093E94 /* ListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A622220446E00093E94 /* ListAssembly.swift */; };
+		BC573A6C2220468300093E94 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC573A6B2220468300093E94 /* List.storyboard */; };
+		BC573A72222047C500093E94 /* ListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A71222047C500093E94 /* ListWireframe.swift */; };
+		BC573A7522204AF300093E94 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A7422204AF300093E94 /* ListTableViewCell.swift */; };
+		BC573A7722204B5400093E94 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A7622204B5400093E94 /* ListTableViewController.swift */; };
+		BC573A7922204BA900093E94 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A7822204BA900093E94 /* ListView.swift */; };
+		BC573A7B22204BDF00093E94 /* ListDisplayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A7A22204BDF00093E94 /* ListDisplayItem.swift */; };
+		BC573A7F222053A500093E94 /* ListEventsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A7E222053A500093E94 /* ListEventsHandler.swift */; };
+		BC573A812220543300093E94 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A802220543300093E94 /* ListPresenter.swift */; };
+		BC573A842221DB6200093E94 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A832221DB6200093E94 /* Person.swift */; };
+		BC573A8A2222846400093E94 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A892222846400093E94 /* ListInteractor.swift */; };
+		BC573A8C222284AC00093E94 /* DefaultListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A8B222284AC00093E94 /* DefaultListInteractor.swift */; };
+		BC573A902222850A00093E94 /* TextSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A8F2222850A00093E94 /* TextSource.swift */; };
+		BC573A92222285E400093E94 /* BundleTextSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A91222285E400093E94 /* BundleTextSource.swift */; };
+		BC573A94222286B800093E94 /* TextParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A93222286B800093E94 /* TextParser.swift */; };
+		BC573A9722228B5600093E94 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9622228B5600093E94 /* ErrorHandler.swift */; };
+		BC573A9922228D7400093E94 /* CSVTextParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9822228D7400093E94 /* CSVTextParser.swift */; };
+		BC573B032223658400093E94 /* ListInteractorOutputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573AA12222A15B00093E94 /* ListInteractorOutputTests.swift */; };
+		BC573B042223676800093E94 /* ListEventsHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9B2222913000093E94 /* ListEventsHandlerTests.swift */; };
+		BC573B052223676F00093E94 /* ListInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9D222292EA00093E94 /* ListInteractorMock.swift */; };
+		BC573B062223677400093E94 /* ListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9F2222930A00093E94 /* ListViewMock.swift */; };
+		BC573B082223ECA900093E94 /* ListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B072223ECA900093E94 /* ListInteractorTests.swift */; };
+		BC573B0A2223ED1D00093E94 /* TextSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B092223ED1D00093E94 /* TextSourceMock.swift */; };
+		BC573B0C2223ED4B00093E94 /* TextParserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B0B2223ED4B00093E94 /* TextParserMock.swift */; };
+		BC573B0E2223ED7400093E94 /* ListInteractorOutputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B0D2223ED7400093E94 /* ListInteractorOutputMock.swift */; };
+		BC573B102223ED9600093E94 /* ErrorHandlerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B0F2223ED9600093E94 /* ErrorHandlerMock.swift */; };
+		BC573B132223F6AB00093E94 /* EmptyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B112223F63E00093E94 /* EmptyError.swift */; };
+		BC573B152223FF2B00093E94 /* CSVTextParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B142223FF2B00093E94 /* CSVTextParserTests.swift */; };
+		BC573B192224090800093E94 /* ListError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B182224090800093E94 /* ListError.swift */; };
+		BC573B1B2224263D00093E94 /* issues.csv in Resources */ = {isa = PBXBuildFile; fileRef = BC573B1A2224263D00093E94 /* issues.csv */; };
 		BC98EFEB22202DD300607734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98EFEA22202DD300607734 /* AppDelegate.swift */; };
-		BC98EFED22202DD300607734 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98EFEC22202DD300607734 /* ViewController.swift */; };
-		BC98EFF022202DD300607734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFEE22202DD300607734 /* Main.storyboard */; };
 		BC98EFF222202DD400607734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF122202DD400607734 /* Assets.xcassets */; };
 		BC98EFF522202DD400607734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF322202DD400607734 /* LaunchScreen.storyboard */; };
-		BC98F00022202DD400607734 /* RabobankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98EFFF22202DD400607734 /* RabobankTests.swift */; };
+		CBBB3498ABCCAF8FC3DE0807 /* libPods-Rabobank.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 490EA4A4640BD0E7D23808B7 /* libPods-Rabobank.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BC98EFFC22202DD400607734 /* PBXContainerItemProxy */ = {
+		BC573AFE222364E800093E94 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BC98EFDF22202DD300607734 /* Project object */;
 			proxyType = 1;
@@ -26,42 +63,312 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08399314E9D00A0207B63971 /* Pods-Rabobank-Tests-RabobankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rabobank-Tests-RabobankTests.debug.xcconfig"; path = "Target Support Files/Pods-Rabobank-Tests-RabobankTests/Pods-Rabobank-Tests-RabobankTests.debug.xcconfig"; sourceTree = "<group>"; };
+		18DAAD16E6B3AB769F5A6792 /* Pods-Rabobank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rabobank.release.xcconfig"; path = "Target Support Files/Pods-Rabobank/Pods-Rabobank.release.xcconfig"; sourceTree = "<group>"; };
+		1B28DD0DB62B0550E2B4B9CF /* Pods-RabobankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RabobankTests.release.xcconfig"; path = "Target Support Files/Pods-RabobankTests/Pods-RabobankTests.release.xcconfig"; sourceTree = "<group>"; };
+		26BD691E8737FBAC9E966939 /* Pods-Rabobank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rabobank.debug.xcconfig"; path = "Target Support Files/Pods-Rabobank/Pods-Rabobank.debug.xcconfig"; sourceTree = "<group>"; };
+		490EA4A4640BD0E7D23808B7 /* libPods-Rabobank.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rabobank.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F9B2837505B982ED95BCE15 /* Pods-RabobankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RabobankTests.debug.xcconfig"; path = "Target Support Files/Pods-RabobankTests/Pods-RabobankTests.debug.xcconfig"; sourceTree = "<group>"; };
+		59AE56651FAAB9C14F53BA5E /* Pods-Rabobank-Tests-RabobankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rabobank-Tests-RabobankTests.release.xcconfig"; path = "Target Support Files/Pods-Rabobank-Tests-RabobankTests/Pods-Rabobank-Tests-RabobankTests.release.xcconfig"; sourceTree = "<group>"; };
+		64481BDAC24364557CCB792A /* Pods_RabobankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RabobankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67312B970D0F4AD8EBBE7D6E /* libPods-Rabobank-Tests-RabobankTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rabobank-Tests-RabobankTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC573A4C22203FC700093E94 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		BC573A4E222040EB00093E94 /* CommonDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDependencies.swift; sourceTree = "<group>"; };
+		BC573A54222041AE00093E94 /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
+		BC573A55222041AE00093E94 /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
+		BC573A57222041AE00093E94 /* StandardNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardNavigator.swift; sourceTree = "<group>"; };
+		BC573A58222041AE00093E94 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		BC573A5D222042FB00093E94 /* Assembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		BC573A5F2220431D00093E94 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		BC573A622220446E00093E94 /* ListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAssembly.swift; sourceTree = "<group>"; };
+		BC573A6B2220468300093E94 /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		BC573A71222047C500093E94 /* ListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWireframe.swift; sourceTree = "<group>"; };
+		BC573A7422204AF300093E94 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		BC573A7622204B5400093E94 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		BC573A7822204BA900093E94 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		BC573A7A22204BDF00093E94 /* ListDisplayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDisplayItem.swift; sourceTree = "<group>"; };
+		BC573A7E222053A500093E94 /* ListEventsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEventsHandler.swift; sourceTree = "<group>"; };
+		BC573A802220543300093E94 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		BC573A832221DB6200093E94 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		BC573A892222846400093E94 /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		BC573A8B222284AC00093E94 /* DefaultListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultListInteractor.swift; sourceTree = "<group>"; };
+		BC573A8F2222850A00093E94 /* TextSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSource.swift; sourceTree = "<group>"; };
+		BC573A91222285E400093E94 /* BundleTextSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleTextSource.swift; sourceTree = "<group>"; };
+		BC573A93222286B800093E94 /* TextParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextParser.swift; sourceTree = "<group>"; };
+		BC573A9622228B5600093E94 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		BC573A9822228D7400093E94 /* CSVTextParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVTextParser.swift; sourceTree = "<group>"; };
+		BC573A9B2222913000093E94 /* ListEventsHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEventsHandlerTests.swift; sourceTree = "<group>"; };
+		BC573A9D222292EA00093E94 /* ListInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractorMock.swift; sourceTree = "<group>"; };
+		BC573A9F2222930A00093E94 /* ListViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewMock.swift; sourceTree = "<group>"; };
+		BC573AA12222A15B00093E94 /* ListInteractorOutputTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractorOutputTests.swift; sourceTree = "<group>"; };
+		BC573AF9222364E800093E94 /* RabobankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RabobankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC573AFD222364E800093E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC573B072223ECA900093E94 /* ListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractorTests.swift; sourceTree = "<group>"; };
+		BC573B092223ED1D00093E94 /* TextSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSourceMock.swift; sourceTree = "<group>"; };
+		BC573B0B2223ED4B00093E94 /* TextParserMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextParserMock.swift; sourceTree = "<group>"; };
+		BC573B0D2223ED7400093E94 /* ListInteractorOutputMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractorOutputMock.swift; sourceTree = "<group>"; };
+		BC573B0F2223ED9600093E94 /* ErrorHandlerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandlerMock.swift; sourceTree = "<group>"; };
+		BC573B112223F63E00093E94 /* EmptyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyError.swift; sourceTree = "<group>"; };
+		BC573B142223FF2B00093E94 /* CSVTextParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVTextParserTests.swift; sourceTree = "<group>"; };
+		BC573B182224090800093E94 /* ListError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListError.swift; sourceTree = "<group>"; };
+		BC573B1A2224263D00093E94 /* issues.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = issues.csv; sourceTree = "<group>"; };
 		BC98EFE722202DD300607734 /* Rabobank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rabobank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC98EFEA22202DD300607734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC98EFEC22202DD300607734 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BC98EFEF22202DD300607734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC98EFF122202DD400607734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC98EFF422202DD400607734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC98EFF622202DD400607734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC98EFFB22202DD400607734 /* RabobankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RabobankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC98EFFF22202DD400607734 /* RabobankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RabobankTests.swift; sourceTree = "<group>"; };
-		BC98F00122202DD400607734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BC573AF6222364E800093E94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DD430D00D89810F86C506FA /* libPods-Rabobank-Tests-RabobankTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BC98EFE422202DD300607734 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BC98EFF822202DD400607734 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				CBBB3498ABCCAF8FC3DE0807 /* libPods-Rabobank.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8188083DF6854F2CED54182D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08399314E9D00A0207B63971 /* Pods-Rabobank-Tests-RabobankTests.debug.xcconfig */,
+				59AE56651FAAB9C14F53BA5E /* Pods-Rabobank-Tests-RabobankTests.release.xcconfig */,
+				4F9B2837505B982ED95BCE15 /* Pods-RabobankTests.debug.xcconfig */,
+				1B28DD0DB62B0550E2B4B9CF /* Pods-RabobankTests.release.xcconfig */,
+				26BD691E8737FBAC9E966939 /* Pods-Rabobank.debug.xcconfig */,
+				18DAAD16E6B3AB769F5A6792 /* Pods-Rabobank.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BC573A502220414E00093E94 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A52222041AE00093E94 /* Routing */,
+				BC573A822221DB4A00093E94 /* Models */,
+				BC573A9522228B3500093E94 /* ErrorHandling */,
+				BC573A5F2220431D00093E94 /* ViewControllerFactory.swift */,
+				BC573A5D222042FB00093E94 /* Assembly.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BC573A512220415C00093E94 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A612220443000093E94 /* List */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		BC573A52222041AE00093E94 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A53222041AE00093E94 /* Wireframe */,
+				BC573A56222041AE00093E94 /* Navigator */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		BC573A53222041AE00093E94 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A54222041AE00093E94 /* BaseWireframe.swift */,
+				BC573A55222041AE00093E94 /* Wireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		BC573A56222041AE00093E94 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A57222041AE00093E94 /* StandardNavigator.swift */,
+				BC573A58222041AE00093E94 /* Navigator.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
+		BC573A612220443000093E94 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A66222045F400093E94 /* Tests */,
+				BC573A65222045E700093E94 /* AppLogic */,
+				BC573A64222045DB00093E94 /* UI */,
+				BC573A622220446E00093E94 /* ListAssembly.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		BC573A64222045DB00093E94 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A6A2220466D00093E94 /* Model */,
+				BC573A692220466100093E94 /* Presenter */,
+				BC573A682220465700093E94 /* View */,
+				BC573A702220479E00093E94 /* Wireframe */,
+				BC573A6B2220468300093E94 /* List.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BC573A65222045E700093E94 /* AppLogic */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A882222842800093E94 /* Services */,
+				BC573A87222283E500093E94 /* Interactor */,
+			);
+			path = AppLogic;
+			sourceTree = "<group>";
+		};
+		BC573A66222045F400093E94 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A9A222290C100093E94 /* Mocks */,
+				BC573A9B2222913000093E94 /* ListEventsHandlerTests.swift */,
+				BC573AA12222A15B00093E94 /* ListInteractorOutputTests.swift */,
+				BC573B072223ECA900093E94 /* ListInteractorTests.swift */,
+				BC573B142223FF2B00093E94 /* CSVTextParserTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		BC573A682220465700093E94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A7322204AAC00093E94 /* Cells */,
+				BC573A7622204B5400093E94 /* ListTableViewController.swift */,
+				BC573A7822204BA900093E94 /* ListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC573A692220466100093E94 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A7E222053A500093E94 /* ListEventsHandler.swift */,
+				BC573A802220543300093E94 /* ListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BC573A6A2220466D00093E94 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A7A22204BDF00093E94 /* ListDisplayItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC573A702220479E00093E94 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A71222047C500093E94 /* ListWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		BC573A7322204AAC00093E94 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A7422204AF300093E94 /* ListTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BC573A822221DB4A00093E94 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A832221DB6200093E94 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC573A87222283E500093E94 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A892222846400093E94 /* ListInteractor.swift */,
+				BC573A8B222284AC00093E94 /* DefaultListInteractor.swift */,
+				BC573B182224090800093E94 /* ListError.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BC573A882222842800093E94 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A8E222284E900093E94 /* Source */,
+				BC573A8D222284DC00093E94 /* Parser */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BC573A8D222284DC00093E94 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A93222286B800093E94 /* TextParser.swift */,
+				BC573A9822228D7400093E94 /* CSVTextParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		BC573A8E222284E900093E94 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A8F2222850A00093E94 /* TextSource.swift */,
+				BC573A91222285E400093E94 /* BundleTextSource.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		BC573A9522228B3500093E94 /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A9622228B5600093E94 /* ErrorHandler.swift */,
+			);
+			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
+		BC573A9A222290C100093E94 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A9D222292EA00093E94 /* ListInteractorMock.swift */,
+				BC573A9F2222930A00093E94 /* ListViewMock.swift */,
+				BC573B092223ED1D00093E94 /* TextSourceMock.swift */,
+				BC573B0B2223ED4B00093E94 /* TextParserMock.swift */,
+				BC573B0D2223ED7400093E94 /* ListInteractorOutputMock.swift */,
+				BC573B0F2223ED9600093E94 /* ErrorHandlerMock.swift */,
+				BC573B112223F63E00093E94 /* EmptyError.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		BC573AFA222364E800093E94 /* RabobankTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC573AFD222364E800093E94 /* Info.plist */,
+			);
+			path = RabobankTests;
+			sourceTree = "<group>";
+		};
 		BC98EFDE22202DD300607734 = {
 			isa = PBXGroup;
 			children = (
 				BC98EFE922202DD300607734 /* Rabobank */,
-				BC98EFFE22202DD400607734 /* RabobankTests */,
+				BC573AFA222364E800093E94 /* RabobankTests */,
 				BC98EFE822202DD300607734 /* Products */,
+				8188083DF6854F2CED54182D /* Pods */,
+				CA9AAC6D786A5A6122300097 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,7 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				BC98EFE722202DD300607734 /* Rabobank.app */,
-				BC98EFFB22202DD400607734 /* RabobankTests.xctest */,
+				BC573AF9222364E800093E94 /* RabobankTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,31 +385,55 @@
 			isa = PBXGroup;
 			children = (
 				BC98EFEA22202DD300607734 /* AppDelegate.swift */,
-				BC98EFEC22202DD300607734 /* ViewController.swift */,
-				BC98EFEE22202DD300607734 /* Main.storyboard */,
+				BC573A4C22203FC700093E94 /* AppDependencies.swift */,
+				BC573A4E222040EB00093E94 /* CommonDependencies.swift */,
+				BC573A502220414E00093E94 /* Common */,
+				BC573A512220415C00093E94 /* Screens */,
 				BC98EFF122202DD400607734 /* Assets.xcassets */,
+				BC573B1A2224263D00093E94 /* issues.csv */,
 				BC98EFF322202DD400607734 /* LaunchScreen.storyboard */,
 				BC98EFF622202DD400607734 /* Info.plist */,
 			);
 			path = Rabobank;
 			sourceTree = "<group>";
 		};
-		BC98EFFE22202DD400607734 /* RabobankTests */ = {
+		CA9AAC6D786A5A6122300097 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BC98EFFF22202DD400607734 /* RabobankTests.swift */,
-				BC98F00122202DD400607734 /* Info.plist */,
+				64481BDAC24364557CCB792A /* Pods_RabobankTests.framework */,
+				490EA4A4640BD0E7D23808B7 /* libPods-Rabobank.a */,
+				67312B970D0F4AD8EBBE7D6E /* libPods-Rabobank-Tests-RabobankTests.a */,
 			);
-			path = RabobankTests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BC573AF8222364E800093E94 /* RabobankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC573B00222364E800093E94 /* Build configuration list for PBXNativeTarget "RabobankTests" */;
+			buildPhases = (
+				9FB503A0E7CCA69C3A81E03E /* [CP] Check Pods Manifest.lock */,
+				BC573AF5222364E800093E94 /* Sources */,
+				BC573AF6222364E800093E94 /* Frameworks */,
+				BC573AF7222364E800093E94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC573AFF222364E800093E94 /* PBXTargetDependency */,
+			);
+			name = RabobankTests;
+			productName = RabobankTests;
+			productReference = BC573AF9222364E800093E94 /* RabobankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BC98EFE622202DD300607734 /* Rabobank */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC98F00422202DD400607734 /* Build configuration list for PBXNativeTarget "Rabobank" */;
 			buildPhases = (
+				0EE5327F5BDAAE532F9E0EFA /* [CP] Check Pods Manifest.lock */,
 				BC98EFE322202DD300607734 /* Sources */,
 				BC98EFE422202DD300607734 /* Frameworks */,
 				BC98EFE522202DD300607734 /* Resources */,
@@ -116,24 +447,6 @@
 			productReference = BC98EFE722202DD300607734 /* Rabobank.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BC98EFFA22202DD400607734 /* RabobankTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BC98F00722202DD400607734 /* Build configuration list for PBXNativeTarget "RabobankTests" */;
-			buildPhases = (
-				BC98EFF722202DD400607734 /* Sources */,
-				BC98EFF822202DD400607734 /* Frameworks */,
-				BC98EFF922202DD400607734 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BC98EFFD22202DD400607734 /* PBXTargetDependency */,
-			);
-			name = RabobankTests;
-			productName = RabobankTests;
-			productReference = BC98EFFB22202DD400607734 /* RabobankTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -144,12 +457,12 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Dennis Skokov";
 				TargetAttributes = {
-					BC98EFE622202DD300607734 = {
-						CreatedOnToolsVersion = 10.1;
-					};
-					BC98EFFA22202DD400607734 = {
+					BC573AF8222364E800093E94 = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = BC98EFE622202DD300607734;
+					};
+					BC98EFE622202DD300607734 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -167,68 +480,142 @@
 			projectRoot = "";
 			targets = (
 				BC98EFE622202DD300607734 /* Rabobank */,
-				BC98EFFA22202DD400607734 /* RabobankTests */,
+				BC573AF8222364E800093E94 /* RabobankTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BC573AF7222364E800093E94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BC98EFE522202DD300607734 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC573B1B2224263D00093E94 /* issues.csv in Resources */,
 				BC98EFF522202DD400607734 /* LaunchScreen.storyboard in Resources */,
+				BC573A6C2220468300093E94 /* List.storyboard in Resources */,
 				BC98EFF222202DD400607734 /* Assets.xcassets in Resources */,
-				BC98EFF022202DD300607734 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BC98EFF922202DD400607734 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0EE5327F5BDAAE532F9E0EFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rabobank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FB503A0E7CCA69C3A81E03E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rabobank-Tests-RabobankTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		BC573AF5222364E800093E94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC573B032223658400093E94 /* ListInteractorOutputTests.swift in Sources */,
+				BC573B0A2223ED1D00093E94 /* TextSourceMock.swift in Sources */,
+				BC573B052223676F00093E94 /* ListInteractorMock.swift in Sources */,
+				BC573B0E2223ED7400093E94 /* ListInteractorOutputMock.swift in Sources */,
+				BC573B0C2223ED4B00093E94 /* TextParserMock.swift in Sources */,
+				BC573B062223677400093E94 /* ListViewMock.swift in Sources */,
+				BC573B042223676800093E94 /* ListEventsHandlerTests.swift in Sources */,
+				BC573B082223ECA900093E94 /* ListInteractorTests.swift in Sources */,
+				BC573B132223F6AB00093E94 /* EmptyError.swift in Sources */,
+				BC573B152223FF2B00093E94 /* CSVTextParserTests.swift in Sources */,
+				BC573B102223ED9600093E94 /* ErrorHandlerMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BC98EFE322202DD300607734 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC98EFED22202DD300607734 /* ViewController.swift in Sources */,
+				BC573A4D22203FC700093E94 /* AppDependencies.swift in Sources */,
+				BC573A602220431D00093E94 /* ViewControllerFactory.swift in Sources */,
+				BC573B192224090800093E94 /* ListError.swift in Sources */,
+				BC573A59222041AE00093E94 /* BaseWireframe.swift in Sources */,
+				BC573A5A222041AE00093E94 /* Wireframe.swift in Sources */,
+				BC573A5E222042FB00093E94 /* Assembly.swift in Sources */,
+				BC573A902222850A00093E94 /* TextSource.swift in Sources */,
+				BC573A94222286B800093E94 /* TextParser.swift in Sources */,
+				BC573A7F222053A500093E94 /* ListEventsHandler.swift in Sources */,
+				BC573A8A2222846400093E94 /* ListInteractor.swift in Sources */,
+				BC573A842221DB6200093E94 /* Person.swift in Sources */,
+				BC573A92222285E400093E94 /* BundleTextSource.swift in Sources */,
+				BC573A7722204B5400093E94 /* ListTableViewController.swift in Sources */,
+				BC573A7B22204BDF00093E94 /* ListDisplayItem.swift in Sources */,
+				BC573A8C222284AC00093E94 /* DefaultListInteractor.swift in Sources */,
+				BC573A7522204AF300093E94 /* ListTableViewCell.swift in Sources */,
+				BC573A5B222041AE00093E94 /* StandardNavigator.swift in Sources */,
+				BC573A812220543300093E94 /* ListPresenter.swift in Sources */,
+				BC573A5C222041AE00093E94 /* Navigator.swift in Sources */,
 				BC98EFEB22202DD300607734 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BC98EFF722202DD400607734 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BC98F00022202DD400607734 /* RabobankTests.swift in Sources */,
+				BC573A7922204BA900093E94 /* ListView.swift in Sources */,
+				BC573A72222047C500093E94 /* ListWireframe.swift in Sources */,
+				BC573A9722228B5600093E94 /* ErrorHandler.swift in Sources */,
+				BC573A632220446E00093E94 /* ListAssembly.swift in Sources */,
+				BC573A4F222040EB00093E94 /* CommonDependencies.swift in Sources */,
+				BC573A9922228D7400093E94 /* CSVTextParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BC98EFFD22202DD400607734 /* PBXTargetDependency */ = {
+		BC573AFF222364E800093E94 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BC98EFE622202DD300607734 /* Rabobank */;
-			targetProxy = BC98EFFC22202DD400607734 /* PBXContainerItemProxy */;
+			targetProxy = BC573AFE222364E800093E94 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BC98EFEE22202DD300607734 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC98EFEF22202DD300607734 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BC98EFF322202DD400607734 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -240,6 +627,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BC573B01222364E800093E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08399314E9D00A0207B63971 /* Pods-Rabobank-Tests-RabobankTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RabobankTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.splendo.RabobankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rabobank.app/Rabobank";
+			};
+			name = Debug;
+		};
+		BC573B02222364E800093E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59AE56651FAAB9C14F53BA5E /* Pods-Rabobank-Tests-RabobankTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RabobankTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.splendo.RabobankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rabobank.app/Rabobank";
+			};
+			name = Release;
+		};
 		BC98F00222202DD400607734 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -291,13 +720,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -346,18 +776,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		BC98F00522202DD400607734 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26BD691E8737FBAC9E966939 /* Pods-Rabobank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,9 +807,11 @@
 		};
 		BC98F00622202DD400607734 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18DAAD16E6B3AB769F5A6792 /* Pods-Rabobank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_TESTABILITY = NO;
 				INFOPLIST_FILE = Rabobank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -390,49 +824,18 @@
 			};
 			name = Release;
 		};
-		BC98F00822202DD400607734 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RabobankTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.splendo.RabobankTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rabobank.app/Rabobank";
-			};
-			name = Debug;
-		};
-		BC98F00922202DD400607734 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RabobankTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.splendo.RabobankTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rabobank.app/Rabobank";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BC573B00222364E800093E94 /* Build configuration list for PBXNativeTarget "RabobankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC573B01222364E800093E94 /* Debug */,
+				BC573B02222364E800093E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BC98EFE222202DD300607734 /* Build configuration list for PBXProject "Rabobank" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -447,15 +850,6 @@
 			buildConfigurations = (
 				BC98F00522202DD400607734 /* Debug */,
 				BC98F00622202DD400607734 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BC98F00722202DD400607734 /* Build configuration list for PBXNativeTarget "RabobankTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BC98F00822202DD400607734 /* Debug */,
-				BC98F00922202DD400607734 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
