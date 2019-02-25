@@ -11,6 +11,8 @@ import Foundation
 class DefaultListInteractor: ListInteractor {
     private let dateFormatter: DateFormatter = {
         let formater = DateFormatter()
+        formater.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        formater.timeZone = TimeZone(identifier: "UTC")
         return formater
     }()
     
@@ -62,7 +64,7 @@ extension DefaultListInteractor {
     }
     
     private func parse(rows: [TextParser.Row] ) {
-        let persons = rows.compactMap { [weak self] row in
+        let persons = rows.dropFirst().compactMap { [weak self] row in
             return self?.convert(row: row)
         }
         
@@ -77,13 +79,14 @@ extension DefaultListInteractor {
             return nil
         }
         
-        guard let date = dateFormatter.date(from: row[Rows.birthday.rawValue]) else {
+        let strDate = row[Rows.birthday.rawValue].trimmingCharacters(in: .punctuationCharacters)
+        guard let date = dateFormatter.date(from: strDate) else {
             proceedInMainThread(error: .parsingError)
             return nil
         }
         
-        let firstName = row[Rows.firstName.rawValue]
-        let surName = row[Rows.surname.rawValue]
+        let firstName = row[Rows.firstName.rawValue].trimmingCharacters(in: .punctuationCharacters)
+        let surName = row[Rows.surname.rawValue].trimmingCharacters(in: .punctuationCharacters)
         
         return Person(firstName: firstName,
                       surName: surName,

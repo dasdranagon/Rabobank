@@ -7,3 +7,5 @@
 //
 
 struct EmptyError: Error {}
+
+extension Error {}

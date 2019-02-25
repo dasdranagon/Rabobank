@@ -15,6 +15,7 @@ class ListPresenter {
     private let dateFormatter: DateFormatter = {
         let formater = DateFormatter()
         formater.dateFormat = "dd.MM.yyyy"
+        formater.timeZone = TimeZone(identifier: "UTC")
         return formater
     }()
 }

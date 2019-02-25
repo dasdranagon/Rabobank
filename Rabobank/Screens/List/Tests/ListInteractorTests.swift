@@ -83,7 +83,7 @@ class ListInteractorTests: QuickSpec {
                     }
                     
                     it("proceeds en empty array in output") {
-                        expect(output.items?.count) == 0
+                        expect(output.items?.count).toEventually(equal(0))
                     }
                 }
                 
@@ -104,29 +104,29 @@ class ListInteractorTests: QuickSpec {
                     }
                     
                     it("skips header") {
-                        expect(output.items?.count) == 1
+                        expect(output.items?.count).toEventually(equal(1))
                     }
                     
                     it("parses rows in person objects") {
-                        expect(output.items?.first) == parsedPerson
+                        expect(output.items?.first).toEventually(equal(parsedPerson))
                     }
                     
                     
                     /// More detailed parsing tests
                     it("parses first name") {
-                        expect(output.items?.first?.firstName) == "Jon"
+                        expect(output.items?.first?.firstName).toEventually(equal("Jon"))
                     }
                     
                     it("parses surname") {
-                        expect(output.items?.first?.surName) == "Doe"
+                        expect(output.items?.first?.surName).toEventually(equal("Doe"))
                     }
                     
                     it("parses issues count") {
-                        expect(output.items?.first?.issueCount) == 5
+                        expect(output.items?.first?.issueCount).toEventually(equal(5))
                     }
                     
                     it("parses date of birdth") {
-                        expect(output.items?.first?.dateOfBirth) == date
+                        expect(output.items?.first?.dateOfBirth).toEventually(equal(date))
                     }
                 }
             }
