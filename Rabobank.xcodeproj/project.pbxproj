@@ -44,6 +44,7 @@
 		BC573B102223ED9600093E94 /* ErrorHandlerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B0F2223ED9600093E94 /* ErrorHandlerMock.swift */; };
 		BC573B132223F6AB00093E94 /* EmptyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B112223F63E00093E94 /* EmptyError.swift */; };
 		BC573B152223FF2B00093E94 /* CSVTextParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B142223FF2B00093E94 /* CSVTextParserTests.swift */; };
+		BC573B192224090800093E94 /* ListError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B182224090800093E94 /* ListError.swift */; };
 		BC98EFEB22202DD300607734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98EFEA22202DD300607734 /* AppDelegate.swift */; };
 		BC98EFF222202DD400607734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF122202DD400607734 /* Assets.xcassets */; };
 		BC98EFF522202DD400607734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF322202DD400607734 /* LaunchScreen.storyboard */; };
@@ -108,6 +109,7 @@
 		BC573B0F2223ED9600093E94 /* ErrorHandlerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandlerMock.swift; sourceTree = "<group>"; };
 		BC573B112223F63E00093E94 /* EmptyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyError.swift; sourceTree = "<group>"; };
 		BC573B142223FF2B00093E94 /* CSVTextParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVTextParserTests.swift; sourceTree = "<group>"; };
+		BC573B182224090800093E94 /* ListError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListError.swift; sourceTree = "<group>"; };
 		BC98EFE722202DD300607734 /* Rabobank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rabobank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC98EFEA22202DD300607734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC98EFF122202DD400607734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 			children = (
 				BC573A892222846400093E94 /* ListInteractor.swift */,
 				BC573A8B222284AC00093E94 /* DefaultListInteractor.swift */,
+				BC573B182224090800093E94 /* ListError.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -571,6 +574,7 @@
 			files = (
 				BC573A4D22203FC700093E94 /* AppDependencies.swift in Sources */,
 				BC573A602220431D00093E94 /* ViewControllerFactory.swift in Sources */,
+				BC573B192224090800093E94 /* ListError.swift in Sources */,
 				BC573A59222041AE00093E94 /* BaseWireframe.swift in Sources */,
 				BC573A5A222041AE00093E94 /* Wireframe.swift in Sources */,
 				BC573A5E222042FB00093E94 /* Assembly.swift in Sources */,

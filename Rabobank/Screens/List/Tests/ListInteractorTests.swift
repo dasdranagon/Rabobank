@@ -61,6 +61,7 @@ class ListInteractorTests: QuickSpec {
                 context("common") {
                     beforeEach {
                         source.textToReturn = text
+                        parser.rowsToReturn = [["", "", "", ""]]
                         interactor.fetch()
                     }
                     

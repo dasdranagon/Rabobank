@@ -9,6 +9,18 @@
 import Foundation
 
 class DefaultListInteractor: ListInteractor {
+    private let dateFormatter: DateFormatter = {
+        let formater = DateFormatter()
+        return formater
+    }()
+    
+    enum Rows: Int {
+        case firstName
+        case surname
+        case issueCount
+        case birthday
+    }
+    
     private let source: TextSource
     private let parser: TextParser
     
@@ -21,6 +33,78 @@ class DefaultListInteractor: ListInteractor {
     }
     
     func fetch() {
+        source.fetch { [weak self] text in
+            guard let text = text else {
+                self?.proceed(error: .dataAccessError)
+                return
+            }
+            
+            self?.parse(text: text)
+        }
+    }
+}
+
+extension DefaultListInteractor {
+    
+    func parse(text: String) {
+        DispatchQueue.global(qos: .utility).async { [weak self] in
+            do {
+                guard let rows = try self?.parser.parse(text: text) else {
+                    self?.proceedInMainThread(error: .unknown)
+                    return
+                }
+                self?.parse(rows: rows)
+
+            } catch {
+                self?.proceedInMainThread(error: .parsingError)
+            }
+        }
+    }
+    
+    private func parse(rows: [TextParser.Row] ) {
+        let persons = rows.compactMap { [weak self] row in
+            return self?.convert(row: row)
+        }
         
+        DispatchQueue.main.async { [weak self] in
+            self?.proceed(persons: persons)
+        }
+    }
+    
+    private func convert(row: TextParser.Row) -> Person? {
+        guard let issuCount = Int(row[Rows.issueCount.rawValue]) else {
+            proceedInMainThread(error: .parsingError)
+            return nil
+        }
+        
+        guard let date = dateFormatter.date(from: row[Rows.birthday.rawValue]) else {
+            proceedInMainThread(error: .parsingError)
+            return nil
+        }
+        
+        let firstName = row[Rows.firstName.rawValue]
+        let surName = row[Rows.surname.rawValue]
+        
+        return Person(firstName: firstName,
+                      surName: surName,
+                      issueCount: issuCount,
+                      dateOfBirth: date)
+    }
+    
+    private func proceedInMainThread(error: ListError) {
+        DispatchQueue.main.async { [weak self] in
+            self?.proceed(error: error)
+        }
+    }
+}
+
+extension DefaultListInteractor {
+    func proceed(error: ListError) {
+        errorHandler?.proceed(error: error)
+        output.update(items: [])
+    }
+    
+    func proceed(persons: [Person]) {
+        output.update(items: persons)
     }
 }
