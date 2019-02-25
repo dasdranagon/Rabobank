@@ -80,8 +80,9 @@ class ListInteractorTests: QuickSpec {
                     
                     it("proceeds en error") {
                         waitUntil { done in
-                            expect(errorHandler.error).notTo(beNil())
+                            sleep(1)
                             done()
+                            expect(errorHandler.error).notTo(beNil())
                         }
                     }
                     
