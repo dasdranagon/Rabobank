@@ -9,7 +9,6 @@
 @testable import Rabobank
 
 class ListViewMock: ListView {
-    
     var updatedItems: [ListDisplayItem]?
     func update(items: [ListDisplayItem]) {
         updatedItems = items
