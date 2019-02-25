@@ -205,7 +205,6 @@
 		BC573A612220443000093E94 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				BC573A66222045F400093E94 /* Tests */,
 				BC573A65222045E700093E94 /* AppLogic */,
 				BC573A64222045DB00093E94 /* UI */,
 				BC573A622220446E00093E94 /* ListAssembly.swift */,
@@ -359,6 +358,7 @@
 		BC573AFA222364E800093E94 /* RabobankTests */ = {
 			isa = PBXGroup;
 			children = (
+				BC573B1F2224472300093E94 /* List */,
 				BC573AFD222364E800093E94 /* Info.plist */,
 			);
 			path = RabobankTests;
@@ -370,6 +370,14 @@
 				BC573B1D2224449000093E94 /* Lock.swift */,
 			);
 			path = Sync;
+			sourceTree = "<group>";
+		};
+		BC573B1F2224472300093E94 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				BC573A66222045F400093E94 /* Tests */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 		BC98EFDE22202DD300607734 = {

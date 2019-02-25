@@ -115,7 +115,6 @@ class ListInteractorTests: QuickSpec {
                         expect(output.items?.first).toEventually(equal(parsedPerson))
                     }
                     
-                    
                     /// More detailed parsing tests
                     it("parses first name") {
                         expect(output.items?.first?.firstName).toEventually(equal("Jon"))
