@@ -9,7 +9,18 @@
 import Foundation
 
 class CSVTextParser: TextParser {
-    func parse(text: String) throws -> [CSVTextParser.Row] {
-        throw NSError(domain: "", code: 0, userInfo: nil)
+    func parse(text: String) throws -> [Row] {
+        
+        var rows: [Row] = []
+        text.enumerateLines { line, _ in
+            rows.append(line.components(separatedBy: CharacterSet(arrayLiteral: ",")))
+        }
+        
+        guard rows.count > 0 else { throw CSVTextParserError.notFound }
+        return rows
     }
+}
+
+enum CSVTextParserError: Error {
+    case notFound
 }

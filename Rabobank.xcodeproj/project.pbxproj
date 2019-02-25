@@ -43,6 +43,7 @@
 		BC573B0E2223ED7400093E94 /* ListInteractorOutputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B0D2223ED7400093E94 /* ListInteractorOutputMock.swift */; };
 		BC573B102223ED9600093E94 /* ErrorHandlerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B0F2223ED9600093E94 /* ErrorHandlerMock.swift */; };
 		BC573B132223F6AB00093E94 /* EmptyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B112223F63E00093E94 /* EmptyError.swift */; };
+		BC573B152223FF2B00093E94 /* CSVTextParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B142223FF2B00093E94 /* CSVTextParserTests.swift */; };
 		BC98EFEB22202DD300607734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98EFEA22202DD300607734 /* AppDelegate.swift */; };
 		BC98EFF222202DD400607734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF122202DD400607734 /* Assets.xcassets */; };
 		BC98EFF522202DD400607734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF322202DD400607734 /* LaunchScreen.storyboard */; };
@@ -106,6 +107,7 @@
 		BC573B0D2223ED7400093E94 /* ListInteractorOutputMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractorOutputMock.swift; sourceTree = "<group>"; };
 		BC573B0F2223ED9600093E94 /* ErrorHandlerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandlerMock.swift; sourceTree = "<group>"; };
 		BC573B112223F63E00093E94 /* EmptyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyError.swift; sourceTree = "<group>"; };
+		BC573B142223FF2B00093E94 /* CSVTextParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVTextParserTests.swift; sourceTree = "<group>"; };
 		BC98EFE722202DD300607734 /* Rabobank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rabobank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC98EFEA22202DD300607734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC98EFF122202DD400607734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				BC573A9B2222913000093E94 /* ListEventsHandlerTests.swift */,
 				BC573AA12222A15B00093E94 /* ListInteractorOutputTests.swift */,
 				BC573B072223ECA900093E94 /* ListInteractorTests.swift */,
+				BC573B142223FF2B00093E94 /* CSVTextParserTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -557,6 +560,7 @@
 				BC573B042223676800093E94 /* ListEventsHandlerTests.swift in Sources */,
 				BC573B082223ECA900093E94 /* ListInteractorTests.swift in Sources */,
 				BC573B132223F6AB00093E94 /* EmptyError.swift in Sources */,
+				BC573B152223FF2B00093E94 /* CSVTextParserTests.swift in Sources */,
 				BC573B102223ED9600093E94 /* ErrorHandlerMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
