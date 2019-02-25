@@ -40,7 +40,7 @@ class ListInteractorOutputTests: QuickSpec {
             
             context("non empty list") {
                 let person = Person(firstName: "Jon",
-                           surName: "Doe",
+                           surname: "Doe",
                            issueCount: 3,
                            dateOfBirth: Date(timeIntervalSince1970: 541241571)) // 25.02.1987
                 beforeEach {

@@ -86,10 +86,10 @@ extension DefaultListInteractor {
         }
         
         let firstName = row[Rows.firstName.rawValue].trimmingCharacters(in: .punctuationCharacters)
-        let surName = row[Rows.surname.rawValue].trimmingCharacters(in: .punctuationCharacters)
+        let surname = row[Rows.surname.rawValue].trimmingCharacters(in: .punctuationCharacters)
         
         return Person(firstName: firstName,
-                      surName: surName,
+                      surname: surname,
                       issueCount: issuCount,
                       dateOfBirth: date)
     }

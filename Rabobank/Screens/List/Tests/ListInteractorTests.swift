@@ -97,7 +97,7 @@ class ListInteractorTests: QuickSpec {
                                                     ["\"Jon\"", "\"Doe\"", "5", "\"\(stringDate)\""]]
                     
                     let parsedPerson = Person(firstName: "Jon",
-                                              surName: "Doe",
+                                              surname: "Doe",
                                               issueCount: 5,
                                               dateOfBirth: date)
                     beforeEach {
@@ -121,7 +121,7 @@ class ListInteractorTests: QuickSpec {
                     }
                     
                     it("parses surname") {
-                        expect(output.items?.first?.surName).toEventually(equal("Doe"))
+                        expect(output.items?.first?.surname).toEventually(equal("Doe"))
                     }
                     
                     it("parses issues count") {

@@ -10,7 +10,7 @@ import Foundation
 
 struct Person {
     let firstName: String
-    let surName: String
+    let surname: String
     let issueCount: Int
     let dateOfBirth: Date
 }

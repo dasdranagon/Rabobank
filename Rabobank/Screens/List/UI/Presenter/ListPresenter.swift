@@ -32,7 +32,7 @@ extension ListPresenter: ListInteractorOutput {
     }
     
     private func displayItem(for person: Person) -> ListDisplayItem {
-        let fullName = "\(person.firstName) \(person.surName)"
+        let fullName = "\(person.firstName) \(person.surname)"
         let issueCount = "\(person.issueCount)"
         let dateOfBirth = dateFormatter.string(from: person.dateOfBirth)
         
