@@ -56,11 +56,11 @@ class ListInteractorOutputTests: QuickSpec {
                 }
                 
                 it("makes correct counter") {
-                    expect(view.updatedItems?.first?.fullName) == "3"
+                    expect(view.updatedItems?.first?.issueCount) == "3"
                 }
                 
                 it("makes correct date") {
-                    expect(view.updatedItems?.first?.dateOfBirth) == "15.02.1987"
+                    expect(view.updatedItems?.first?.dateOfBirth) == "25.02.1987"
                 }
             }
             
