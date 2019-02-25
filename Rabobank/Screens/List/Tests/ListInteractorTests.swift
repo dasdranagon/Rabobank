@@ -66,7 +66,7 @@ class ListInteractorTests: QuickSpec {
                     }
                     
                     it("passes text to the parser") {
-                        expect(parser.textToParse) == text
+                        expect(parser.textToParse).toEventually(equal(text))
                     }
                 }
                 
@@ -79,7 +79,10 @@ class ListInteractorTests: QuickSpec {
                     }
                     
                     it("proceeds en error") {
-                        expect(errorHandler.error).notTo(beNil())
+                        waitUntil { done in
+                            expect(errorHandler.error).notTo(beNil())
+                            done()
+                        }
                     }
                     
                     it("proceeds en empty array in output") {
