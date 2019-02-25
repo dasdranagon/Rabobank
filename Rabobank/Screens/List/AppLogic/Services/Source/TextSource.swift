@@ -9,6 +9,6 @@
 import Foundation
 
 protocol TextSource {
-    typealias Response = (String?)->()
-    func fetch(response: Response)
+    typealias ResponseHandler = (String?)->()
+    func fetch(handler: @escaping ResponseHandler)
 }

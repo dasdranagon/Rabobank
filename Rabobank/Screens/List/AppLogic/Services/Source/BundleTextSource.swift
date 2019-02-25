@@ -9,13 +9,29 @@
 import Foundation
 
 class BundleTextSource {
+    enum Constants {
+        static let fileName = "issues"
+    }
+    
+    let resource: String
+    let type: String
     init(resource: String, ofType type: String) {
-        
+        self.resource = resource
+        self.type = type
     }
 }
 
 extension BundleTextSource: TextSource {
-    func fetch(response: (String?) -> ()) {
-        
+    func fetch(handler:  @escaping (String?) -> ()) {
+        guard let url = Bundle.main.url(forResource: Constants.fileName, withExtension: "csv") else {
+            handler(nil)
+            return
+        }
+        DispatchQueue.global(qos: .utility).async {
+            let text = try? String.init(contentsOf: url)
+            DispatchQueue.main.async {
+                handler(text)
+            }
+        }
     }
 }
