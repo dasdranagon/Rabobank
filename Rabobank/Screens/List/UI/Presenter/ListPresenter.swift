@@ -12,6 +12,8 @@ class ListPresenter {
     weak var view: ListView!
     weak var interactor: ListInteractor!
     
+    private var processing = false // TODO: Extract in state machine
+    
     private let dateFormatter: DateFormatter = {
         let formater = DateFormatter()
         formater.dateFormat = "dd.MM.yyyy"
@@ -22,9 +24,11 @@ class ListPresenter {
 
 extension ListPresenter: ListInteractorOutput {
     func update(items: [Person]) {
-        view.processing(show: false)
         let displayItems = items.compactMap { [weak self] in self?.displayItem(for: $0) }
         view.update(items: displayItems)
+        
+        processing = false
+        view.processing(show: false)
     }
     
     private func displayItem(for person: Person) -> ListDisplayItem {
@@ -47,6 +51,9 @@ extension ListPresenter: ListEventsHandler {
     }
     
     private func load() {
+        guard processing == false else { return }
+        processing = true
+        
         view.processing(show: true)
         interactor.fetch()
     }
