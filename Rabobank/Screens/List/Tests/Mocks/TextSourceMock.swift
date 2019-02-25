@@ -11,8 +11,8 @@
 class TextSourceMock: TextSource {
     var textToReturn: String?
     var fetchWasCalled = false
-    func fetch(response: (String?) -> ()) {
+    func fetch(handler: (String?) -> ()) {
         fetchWasCalled = true
-        response(textToReturn)
+        handler(textToReturn)
     }
 }
