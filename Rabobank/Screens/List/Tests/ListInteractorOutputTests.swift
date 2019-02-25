@@ -12,14 +12,6 @@ import Quick
 @testable import Rabobank
 
 class ListInteractorOutputTests: QuickSpec {
-    
     override func spec() {
-        let t = true
-        describe("test") {
-            it("it test") {
-                expect(t) == true
-            }
-        }
     }
-
 }

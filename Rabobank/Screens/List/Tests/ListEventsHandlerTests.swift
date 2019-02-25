@@ -13,34 +13,27 @@ import Quick
 
 class ListEventsHandlerTests: QuickSpec {
     override func spec() {
+        var listPresenter: ListPresenter!
+        var interactor: ListInteractorMock!
+        var view: ListViewMock!
+
+        beforeEach {
+            interactor = ListInteractorMock()
+            view = ListViewMock()
+
+            listPresenter = ListPresenter()
+            listPresenter.interactor = interactor
+            listPresenter.view = view
+        }
+
         describe("ready") {
-            it("test", closure: {
-                expect("string").to(equal("Squee!"))
-            })
+            beforeEach {
+                listPresenter.ready()
+            }
+
+            it("shows top processing indicator") {
+                expect(view.processingIndicatorWasShowed) == true
+            }
         }
     }
-//    override func spec() {
-//        var listPresenter: ListPresenter!
-//        var interactor: ListInteractorMock!
-//        var view: ListViewMock!
-//
-//        beforeEach {
-//            interactor = ListInteractorMock()
-//            view = ListViewMock()
-//
-//            listPresenter = ListPresenter()
-//            listPresenter.interactor = interactor
-//            listPresenter.view = view
-//        }
-//
-//        describe("ready") {
-//            beforeEach {
-//                listPresenter.ready()
-//            }
-//
-//            it("shows top processing indicator") {
-//                expect(view.processingIndicatorWasShowed) == true
-//            }
-//        }
-//    }
 }

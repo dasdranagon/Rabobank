@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6DD430D00D89810F86C506FA /* libPods-Rabobank-Tests-RabobankTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67312B970D0F4AD8EBBE7D6E /* libPods-Rabobank-Tests-RabobankTests.a */; };
 		BC573A4D22203FC700093E94 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A4C22203FC700093E94 /* AppDependencies.swift */; };
 		BC573A4F222040EB00093E94 /* CommonDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A4E222040EB00093E94 /* CommonDependencies.swift */; };
 		BC573A59222041AE00093E94 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A54222041AE00093E94 /* BaseWireframe.swift */; };
@@ -32,10 +33,14 @@
 		BC573A94222286B800093E94 /* TextParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A93222286B800093E94 /* TextParser.swift */; };
 		BC573A9722228B5600093E94 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9622228B5600093E94 /* ErrorHandler.swift */; };
 		BC573A9922228D7400093E94 /* CSVTextParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9822228D7400093E94 /* CSVTextParser.swift */; };
-		BC573AFC222364E800093E94 /* RabobankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573AFB222364E800093E94 /* RabobankTests.swift */; };
+		BC573B032223658400093E94 /* ListInteractorOutputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573AA12222A15B00093E94 /* ListInteractorOutputTests.swift */; };
+		BC573B042223676800093E94 /* ListEventsHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9B2222913000093E94 /* ListEventsHandlerTests.swift */; };
+		BC573B052223676F00093E94 /* ListInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9D222292EA00093E94 /* ListInteractorMock.swift */; };
+		BC573B062223677400093E94 /* ListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9F2222930A00093E94 /* ListViewMock.swift */; };
 		BC98EFEB22202DD300607734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98EFEA22202DD300607734 /* AppDelegate.swift */; };
 		BC98EFF222202DD400607734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF122202DD400607734 /* Assets.xcassets */; };
 		BC98EFF522202DD400607734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF322202DD400607734 /* LaunchScreen.storyboard */; };
+		CBBB3498ABCCAF8FC3DE0807 /* libPods-Rabobank.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 490EA4A4640BD0E7D23808B7 /* libPods-Rabobank.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,12 +55,14 @@
 
 /* Begin PBXFileReference section */
 		08399314E9D00A0207B63971 /* Pods-Rabobank-Tests-RabobankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rabobank-Tests-RabobankTests.debug.xcconfig"; path = "Target Support Files/Pods-Rabobank-Tests-RabobankTests/Pods-Rabobank-Tests-RabobankTests.debug.xcconfig"; sourceTree = "<group>"; };
+		18DAAD16E6B3AB769F5A6792 /* Pods-Rabobank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rabobank.release.xcconfig"; path = "Target Support Files/Pods-Rabobank/Pods-Rabobank.release.xcconfig"; sourceTree = "<group>"; };
 		1B28DD0DB62B0550E2B4B9CF /* Pods-RabobankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RabobankTests.release.xcconfig"; path = "Target Support Files/Pods-RabobankTests/Pods-RabobankTests.release.xcconfig"; sourceTree = "<group>"; };
+		26BD691E8737FBAC9E966939 /* Pods-Rabobank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rabobank.debug.xcconfig"; path = "Target Support Files/Pods-Rabobank/Pods-Rabobank.debug.xcconfig"; sourceTree = "<group>"; };
+		490EA4A4640BD0E7D23808B7 /* libPods-Rabobank.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rabobank.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F9B2837505B982ED95BCE15 /* Pods-RabobankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RabobankTests.debug.xcconfig"; path = "Target Support Files/Pods-RabobankTests/Pods-RabobankTests.debug.xcconfig"; sourceTree = "<group>"; };
 		59AE56651FAAB9C14F53BA5E /* Pods-Rabobank-Tests-RabobankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rabobank-Tests-RabobankTests.release.xcconfig"; path = "Target Support Files/Pods-Rabobank-Tests-RabobankTests/Pods-Rabobank-Tests-RabobankTests.release.xcconfig"; sourceTree = "<group>"; };
-		5A04CAD31D6BB4973C2C8E30 /* Pods_Rabobank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rabobank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64481BDAC24364557CCB792A /* Pods_RabobankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RabobankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BD904472E6E80EBCD37C6B5 /* Pods_Rabobank_Tests_RabobankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rabobank_Tests_RabobankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67312B970D0F4AD8EBBE7D6E /* libPods-Rabobank-Tests-RabobankTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rabobank-Tests-RabobankTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC573A4C22203FC700093E94 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		BC573A4E222040EB00093E94 /* CommonDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDependencies.swift; sourceTree = "<group>"; };
 		BC573A54222041AE00093E94 /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
@@ -86,7 +93,6 @@
 		BC573A9F2222930A00093E94 /* ListViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewMock.swift; sourceTree = "<group>"; };
 		BC573AA12222A15B00093E94 /* ListInteractorOutputTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractorOutputTests.swift; sourceTree = "<group>"; };
 		BC573AF9222364E800093E94 /* RabobankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RabobankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC573AFB222364E800093E94 /* RabobankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RabobankTests.swift; sourceTree = "<group>"; };
 		BC573AFD222364E800093E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC98EFE722202DD300607734 /* Rabobank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rabobank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC98EFEA22202DD300607734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DD430D00D89810F86C506FA /* libPods-Rabobank-Tests-RabobankTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBBB3498ABCCAF8FC3DE0807 /* libPods-Rabobank.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +128,8 @@
 				59AE56651FAAB9C14F53BA5E /* Pods-Rabobank-Tests-RabobankTests.release.xcconfig */,
 				4F9B2837505B982ED95BCE15 /* Pods-RabobankTests.debug.xcconfig */,
 				1B28DD0DB62B0550E2B4B9CF /* Pods-RabobankTests.release.xcconfig */,
+				26BD691E8737FBAC9E966939 /* Pods-Rabobank.debug.xcconfig */,
+				18DAAD16E6B3AB769F5A6792 /* Pods-Rabobank.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -320,7 +330,6 @@
 		BC573AFA222364E800093E94 /* RabobankTests */ = {
 			isa = PBXGroup;
 			children = (
-				BC573AFB222364E800093E94 /* RabobankTests.swift */,
 				BC573AFD222364E800093E94 /* Info.plist */,
 			);
 			path = RabobankTests;
@@ -364,9 +373,9 @@
 		CA9AAC6D786A5A6122300097 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5A04CAD31D6BB4973C2C8E30 /* Pods_Rabobank.framework */,
-				6BD904472E6E80EBCD37C6B5 /* Pods_Rabobank_Tests_RabobankTests.framework */,
 				64481BDAC24364557CCB792A /* Pods_RabobankTests.framework */,
+				490EA4A4640BD0E7D23808B7 /* libPods-Rabobank.a */,
+				67312B970D0F4AD8EBBE7D6E /* libPods-Rabobank-Tests-RabobankTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -378,6 +387,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC573B00222364E800093E94 /* Build configuration list for PBXNativeTarget "RabobankTests" */;
 			buildPhases = (
+				9FB503A0E7CCA69C3A81E03E /* [CP] Check Pods Manifest.lock */,
 				BC573AF5222364E800093E94 /* Sources */,
 				BC573AF6222364E800093E94 /* Frameworks */,
 				BC573AF7222364E800093E94 /* Resources */,
@@ -396,6 +406,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC98F00422202DD400607734 /* Build configuration list for PBXNativeTarget "Rabobank" */;
 			buildPhases = (
+				0EE5327F5BDAAE532F9E0EFA /* [CP] Check Pods Manifest.lock */,
 				BC98EFE322202DD300607734 /* Sources */,
 				BC98EFE422202DD300607734 /* Frameworks */,
 				BC98EFE522202DD300607734 /* Resources */,
@@ -467,12 +478,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0EE5327F5BDAAE532F9E0EFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rabobank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FB503A0E7CCA69C3A81E03E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rabobank-Tests-RabobankTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC573AF5222364E800093E94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC573AFC222364E800093E94 /* RabobankTests.swift in Sources */,
+				BC573B032223658400093E94 /* ListInteractorOutputTests.swift in Sources */,
+				BC573B052223676F00093E94 /* ListInteractorMock.swift in Sources */,
+				BC573B062223677400093E94 /* ListViewMock.swift in Sources */,
+				BC573B042223676800093E94 /* ListEventsHandlerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +593,7 @@
 /* Begin XCBuildConfiguration section */
 		BC573B01222364E800093E94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08399314E9D00A0207B63971 /* Pods-Rabobank-Tests-RabobankTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -552,6 +614,7 @@
 		};
 		BC573B02222364E800093E94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59AE56651FAAB9C14F53BA5E /* Pods-Rabobank-Tests-RabobankTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -690,6 +753,7 @@
 		};
 		BC98F00522202DD400607734 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26BD691E8737FBAC9E966939 /* Pods-Rabobank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -707,9 +771,11 @@
 		};
 		BC98F00622202DD400607734 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18DAAD16E6B3AB769F5A6792 /* Pods-Rabobank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_TESTABILITY = NO;
 				INFOPLIST_FILE = Rabobank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
