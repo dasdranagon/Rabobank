@@ -37,6 +37,11 @@
 		BC573B042223676800093E94 /* ListEventsHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9B2222913000093E94 /* ListEventsHandlerTests.swift */; };
 		BC573B052223676F00093E94 /* ListInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9D222292EA00093E94 /* ListInteractorMock.swift */; };
 		BC573B062223677400093E94 /* ListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9F2222930A00093E94 /* ListViewMock.swift */; };
+		BC573B082223ECA900093E94 /* ListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B072223ECA900093E94 /* ListInteractorTests.swift */; };
+		BC573B0A2223ED1D00093E94 /* TextSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B092223ED1D00093E94 /* TextSourceMock.swift */; };
+		BC573B0C2223ED4B00093E94 /* TextParserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B0B2223ED4B00093E94 /* TextParserMock.swift */; };
+		BC573B0E2223ED7400093E94 /* ListInteractorOutputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B0D2223ED7400093E94 /* ListInteractorOutputMock.swift */; };
+		BC573B102223ED9600093E94 /* ErrorHandlerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B0F2223ED9600093E94 /* ErrorHandlerMock.swift */; };
 		BC98EFEB22202DD300607734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98EFEA22202DD300607734 /* AppDelegate.swift */; };
 		BC98EFF222202DD400607734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF122202DD400607734 /* Assets.xcassets */; };
 		BC98EFF522202DD400607734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF322202DD400607734 /* LaunchScreen.storyboard */; };
@@ -94,6 +99,11 @@
 		BC573AA12222A15B00093E94 /* ListInteractorOutputTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractorOutputTests.swift; sourceTree = "<group>"; };
 		BC573AF9222364E800093E94 /* RabobankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RabobankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC573AFD222364E800093E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC573B072223ECA900093E94 /* ListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractorTests.swift; sourceTree = "<group>"; };
+		BC573B092223ED1D00093E94 /* TextSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSourceMock.swift; sourceTree = "<group>"; };
+		BC573B0B2223ED4B00093E94 /* TextParserMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextParserMock.swift; sourceTree = "<group>"; };
+		BC573B0D2223ED7400093E94 /* ListInteractorOutputMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractorOutputMock.swift; sourceTree = "<group>"; };
+		BC573B0F2223ED9600093E94 /* ErrorHandlerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandlerMock.swift; sourceTree = "<group>"; };
 		BC98EFE722202DD300607734 /* Rabobank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rabobank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC98EFEA22202DD300607734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC98EFF122202DD400607734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -219,6 +229,7 @@
 				BC573A9A222290C100093E94 /* Mocks */,
 				BC573A9B2222913000093E94 /* ListEventsHandlerTests.swift */,
 				BC573AA12222A15B00093E94 /* ListInteractorOutputTests.swift */,
+				BC573B072223ECA900093E94 /* ListInteractorTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -323,6 +334,10 @@
 			children = (
 				BC573A9D222292EA00093E94 /* ListInteractorMock.swift */,
 				BC573A9F2222930A00093E94 /* ListViewMock.swift */,
+				BC573B092223ED1D00093E94 /* TextSourceMock.swift */,
+				BC573B0B2223ED4B00093E94 /* TextParserMock.swift */,
+				BC573B0D2223ED7400093E94 /* ListInteractorOutputMock.swift */,
+				BC573B0F2223ED9600093E94 /* ErrorHandlerMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -531,9 +546,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC573B032223658400093E94 /* ListInteractorOutputTests.swift in Sources */,
+				BC573B0A2223ED1D00093E94 /* TextSourceMock.swift in Sources */,
 				BC573B052223676F00093E94 /* ListInteractorMock.swift in Sources */,
+				BC573B0E2223ED7400093E94 /* ListInteractorOutputMock.swift in Sources */,
+				BC573B0C2223ED4B00093E94 /* TextParserMock.swift in Sources */,
 				BC573B062223677400093E94 /* ListViewMock.swift in Sources */,
 				BC573B042223676800093E94 /* ListEventsHandlerTests.swift in Sources */,
+				BC573B082223ECA900093E94 /* ListInteractorTests.swift in Sources */,
+				BC573B102223ED9600093E94 /* ErrorHandlerMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

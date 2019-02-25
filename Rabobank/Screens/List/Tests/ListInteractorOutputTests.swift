@@ -63,7 +63,6 @@ class ListInteractorOutputTests: QuickSpec {
                     expect(view.updatedItems?.first?.dateOfBirth) == "25.02.1987"
                 }
             }
-            
         }
     }
 }
