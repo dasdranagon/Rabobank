@@ -13,3 +13,13 @@ enum ListError: Error {
     case parsingError
     case unknown
 }
+
+extension ListError: LocalizedError {
+    public var errorDescription: String? {
+        switch self {
+        case .dataAccessError: return NSLocalizedString("Cannot read CSV file", comment: "data access error")
+        case .parsingError: return NSLocalizedString("Unexpected content of CSV file", comment: "parsing error")
+        case .unknown: return NSLocalizedString("Unknown error occurred", comment: "unknown error")
+        }
+    }
+}
