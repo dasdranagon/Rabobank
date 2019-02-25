@@ -10,7 +10,9 @@
 
 class TextSourceMock: TextSource {
     var textToReturn: String?
+    var fetchWasCalled = false
     func fetch(response: (String?) -> ()) {
+        fetchWasCalled = true
         response(textToReturn)
     }
 }

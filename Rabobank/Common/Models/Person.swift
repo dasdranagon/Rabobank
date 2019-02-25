@@ -14,3 +14,5 @@ struct Person {
     let issueCount: Int
     let dateOfBirth: Date
 }
+
+extension Person: Equatable {}

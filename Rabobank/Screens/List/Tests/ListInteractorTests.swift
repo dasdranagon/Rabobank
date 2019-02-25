@@ -29,5 +29,106 @@ class ListInteractorTests: QuickSpec {
             interactor.output = output
             interactor.errorHandler = errorHandler
         }
+        
+        describe("fetch") {
+            context("common") {
+                beforeEach {
+                    interactor.fetch()
+                }
+                
+                it("reads data from source") {
+                    expect(source.fetchWasCalled) == true
+                }
+            }
+            
+            context("not able to read text") {
+                beforeEach {
+                    source.textToReturn = nil
+                    interactor.fetch()
+                }
+                
+                it("proceeds en error") {
+                    expect(errorHandler.error).notTo(beNil())
+                }
+                
+                it("proceeds en empty array in output") {
+                    expect(output.items?.count) == 0
+                }
+            }
+            
+            context("able to read text") {
+                let text = "Some text"
+                context("common") {
+                    beforeEach {
+                        source.textToReturn = text
+                        interactor.fetch()
+                    }
+                    
+                    it("passes text to the parser") {
+                        expect(parser.textToParse) == text
+                    }
+                }
+                
+                context("not able to parse") {
+                    let error = EmptyError()
+                    beforeEach {
+                        source.textToReturn = text
+                        parser.error = error
+                        interactor.fetch()
+                    }
+                    
+                    it("proceeds en error") {
+                        expect(errorHandler.error).notTo(beNil())
+                    }
+                    
+                    it("proceeds en empty array in output") {
+                        expect(output.items?.count) == 0
+                    }
+                }
+                
+                context("able to parse") {
+                    let stringDate = "1978-01-02T00:00:00"
+                    let date = Date(timeIntervalSince1970: 252547200)
+                    let parsedObject: [[String]] = [["\"First name\"","\"Sur name\"","\"Issue count\"","\"Date of birth\""],
+                                                    ["\"Jon\"", "\"Doe\"", "5", "\"\(stringDate)\""]]
+                    
+                    let parsedPerson = Person(firstName: "Jon",
+                                              surName: "Doe",
+                                              issueCount: 5,
+                                              dateOfBirth: date)
+                    beforeEach {
+                        source.textToReturn = text
+                        parser.rowsToReturn = parsedObject
+                        interactor.fetch()
+                    }
+                    
+                    it("skips header") {
+                        expect(output.items?.count) == 1
+                    }
+                    
+                    it("parses rows in person objects") {
+                        expect(output.items?.first) == parsedPerson
+                    }
+                    
+                    
+                    /// More detailed parsing tests
+                    it("parses first name") {
+                        expect(output.items?.first?.firstName) == "Jon"
+                    }
+                    
+                    it("parses surname") {
+                        expect(output.items?.first?.surName) == "Doe"
+                    }
+                    
+                    it("parses issues count") {
+                        expect(output.items?.first?.issueCount) == 5
+                    }
+                    
+                    it("parses date of birdth") {
+                        expect(output.items?.first?.dateOfBirth) == date
+                    }
+                }
+            }
+        }
     }
 }
