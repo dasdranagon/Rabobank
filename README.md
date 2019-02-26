@@ -25,13 +25,15 @@ Project structure reflects the used architecture approach.
 In the root of the project, there are two folders: **Common** and **Screens**.  
 **Common** project contains all solution which could be used through the whole application.
 **Screens** contains folders with specific screens. Each screen folder has the same structure. It contains *Assembly* file which defines all dependencies within a specific screen and two folders: **AppLogic** and **UI**.
-**UI** folder contains View, Presenter, and Router implementation, **AppLogic** contains interactor and services.
+**UI** folder contains View, Presenter, and Router implementation, **AppLogic** contains interactor and services.  
+All assemblies collected in **AppDependencies** file in project root. In the same place also will be set all dependencies between assemblies.  
+Common dependencies (like navigator and a data storage) collected in CommonDependencies singleton object and could be accessed directly from an assembly file( it allows to minimize dependency injection code). 
 
-## About **Router**
+## About Router
 
 **Router** is an important part of **VIPER** architecture and other implements as a separate entity. In current implementation I have split **Router** in two parts with different responsibilities: **Navigator** and **Wireframe** (see Common/Routing folder).  
 **Navigator** is responsible for all types of navigation, but it doesn't know anything about navigation between concrete screens.
-**Wireframe** is responsible for navigation on concrete screen. It implements methods *activate* and *deactivate* which show or dismiss the concrete screen. It also may contain references to other wireframes and activate it by request from *Presenter*.  
+**Wireframe** is responsible for navigation on concrete screen. It implements methods *activate* and *deactivate* which show or dismiss the concrete screen. It also may contain references to other wireframes and activate it by request from **Presenter**.  
 In a current implementation, there is no navigation between screens so **ListWireframe** is just type alias for BaseWireframe which has a default implementation of *activate* and *deactivate* methods. The presenter doesn't have a reference to Wireframe because it doesn't initiate any navigation. 
 In case if navigation to another screen should be implemented, ListWireframe should inherit BaseWireframe and contain a reference to the wireframe of the target screen. ListPresenter should contain the reference to Wireframe and initiate navigation if needed.
 
