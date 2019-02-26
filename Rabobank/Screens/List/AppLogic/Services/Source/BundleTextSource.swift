@@ -28,7 +28,7 @@ extension BundleTextSource: TextSource {
             return
         }
         DispatchQueue.global(qos: .utility).async {
-            let text = try? String.init(contentsOf: url)
+            let text = try? String(contentsOf: url)
             DispatchQueue.main.async {
                 handler(text)
             }
