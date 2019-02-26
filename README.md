@@ -7,6 +7,13 @@ Create an app that is capable of visualizing the attached csv file on the screen
 This application was developed as a test assignment for Rabobank and aims to show my development skills, knowledge of the architecture approaches and ability to develop a big enterprise project.  
 Although such complicated enterprise architecture is not suitable for small one screen application, I developed it with idea of possible extension and as example how in my opinion proper implementation of clean architecture should look like.
 
+## Focus points:
+ * Clean architecture
+ * Code quality
+ * Ability to test
+ * Ability to extend
+ * Ability to support
+
 ## Author
 
 **Dennis Skokov**  
