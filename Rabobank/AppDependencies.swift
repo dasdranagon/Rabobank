@@ -36,9 +36,12 @@ struct AppDependencies {
     }
 }
 
+// MARK: Common dependencies
+// prepareCommonDependencies - here could be for instance data storage initialization
+// assembleCommonDependencies - add you dependency to the common dependency object
 extension AppDependencies {
     private func prepareCommonDependencies() {
-        
+     
     }
     
     private func assembleCommonDependencies() {
@@ -49,24 +52,31 @@ extension AppDependencies {
     }
 }
 
+// MARK: Concrete dependencies
 extension AppDependencies {
+    
+    // Setup dependencies between assemblies
     private mutating func setupDependencies() {
         appInitialWireframe = assemblies.list.wireframe
     }
     
-    private func injectDependencies() {
-        let mirror = Mirror(reflecting: assemblies)
-        for (_, value) in mirror.children {
-            guard let assembly = value as? Assembly else { continue }
-            assembly.injectDependencies()
-        }
-    }
-    
+    // In configure method of concrete assembly all internal dependencies should be set up.
+    // For instance dependence between presenter and wireframe.
     private func configure() {
         let mirror = Mirror(reflecting: assemblies)
         for (_, value) in mirror.children {
             guard let assembly = value as? Assembly else { continue }
             assembly.configure()
+        }
+    }
+    
+    // In injectDependencies method of concrete assembly all external dependencies should be set up.
+    // For instance dependence between wireframes of different assemblies
+    private func injectDependencies() {
+        let mirror = Mirror(reflecting: assemblies)
+        for (_, value) in mirror.children {
+            guard let assembly = value as? Assembly else { continue }
+            assembly.injectDependencies()
         }
     }
 }
