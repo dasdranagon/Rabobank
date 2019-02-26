@@ -8,6 +8,6 @@ Create an app that is capable of visualizing the attached csv file on the screen
 
 ## Author
 
-**Dennis Skokov**
-<tel:+31633319874>
-<dennis@splendo.com>
+**Dennis Skokov**  
+<tel:+31633319874>  
+<dennis@splendo.com>  
