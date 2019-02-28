@@ -12,12 +12,10 @@
 		BC38694C2228177B006A1808 /* DefaultPersonsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC38694B2228177A006A1808 /* DefaultPersonsFactory.swift */; };
 		BC38694E222818B7006A1808 /* PersonsFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC38694D222818B7006A1808 /* PersonsFactoryTests.swift */; };
 		BC573A4D22203FC700093E94 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A4C22203FC700093E94 /* AppDependencies.swift */; };
-		BC573A4F222040EB00093E94 /* CommonDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A4E222040EB00093E94 /* CommonDependencies.swift */; };
 		BC573A59222041AE00093E94 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A54222041AE00093E94 /* BaseWireframe.swift */; };
 		BC573A5A222041AE00093E94 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A55222041AE00093E94 /* Wireframe.swift */; };
 		BC573A5B222041AE00093E94 /* StandardNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A57222041AE00093E94 /* StandardNavigator.swift */; };
 		BC573A5C222041AE00093E94 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A58222041AE00093E94 /* Navigator.swift */; };
-		BC573A5E222042FB00093E94 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A5D222042FB00093E94 /* Assembly.swift */; };
 		BC573A602220431D00093E94 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A5F2220431D00093E94 /* ViewControllerFactory.swift */; };
 		BC573A632220446E00093E94 /* ListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A622220446E00093E94 /* ListAssembly.swift */; };
 		BC573A6C2220468300093E94 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC573A6B2220468300093E94 /* List.storyboard */; };
@@ -80,12 +78,10 @@
 		BC38694B2228177A006A1808 /* DefaultPersonsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPersonsFactory.swift; sourceTree = "<group>"; };
 		BC38694D222818B7006A1808 /* PersonsFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsFactoryTests.swift; sourceTree = "<group>"; };
 		BC573A4C22203FC700093E94 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
-		BC573A4E222040EB00093E94 /* CommonDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDependencies.swift; sourceTree = "<group>"; };
 		BC573A54222041AE00093E94 /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
 		BC573A55222041AE00093E94 /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
 		BC573A57222041AE00093E94 /* StandardNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardNavigator.swift; sourceTree = "<group>"; };
 		BC573A58222041AE00093E94 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
-		BC573A5D222042FB00093E94 /* Assembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
 		BC573A5F2220431D00093E94 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		BC573A622220446E00093E94 /* ListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAssembly.swift; sourceTree = "<group>"; };
 		BC573A6B2220468300093E94 /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
@@ -177,7 +173,6 @@
 				BC573A822221DB4A00093E94 /* Models */,
 				BC573A9522228B3500093E94 /* ErrorHandling */,
 				BC573A5F2220431D00093E94 /* ViewControllerFactory.swift */,
-				BC573A5D222042FB00093E94 /* Assembly.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -422,7 +417,6 @@
 			children = (
 				BC98EFEA22202DD300607734 /* AppDelegate.swift */,
 				BC573A4C22203FC700093E94 /* AppDependencies.swift */,
-				BC573A4E222040EB00093E94 /* CommonDependencies.swift */,
 				BC573A502220414E00093E94 /* Common */,
 				BC573A512220415C00093E94 /* Screens */,
 				BC98EFF122202DD400607734 /* Assets.xcassets */,
@@ -619,7 +613,6 @@
 				BC573A59222041AE00093E94 /* BaseWireframe.swift in Sources */,
 				BC573A5A222041AE00093E94 /* Wireframe.swift in Sources */,
 				BC386947222814A4006A1808 /* PersonsFactory.swift in Sources */,
-				BC573A5E222042FB00093E94 /* Assembly.swift in Sources */,
 				BC573A902222850A00093E94 /* TextSource.swift in Sources */,
 				BC573A94222286B800093E94 /* TextParser.swift in Sources */,
 				BC573A7F222053A500093E94 /* ListEventsHandler.swift in Sources */,
@@ -640,7 +633,6 @@
 				BC573B1E2224449000093E94 /* Lock.swift in Sources */,
 				BC573A9722228B5600093E94 /* ErrorHandler.swift in Sources */,
 				BC573A632220446E00093E94 /* ListAssembly.swift in Sources */,
-				BC573A4F222040EB00093E94 /* CommonDependencies.swift in Sources */,
 				BC573A9922228D7400093E94 /* CSVTextParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

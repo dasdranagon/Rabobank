@@ -9,14 +9,8 @@
 import UIKit
 
 struct AppDependencies {
-    struct Assemblies {
-        let list = ListAssembly()
-    }
-    private let assemblies = Assemblies()
-    
+    let listAssembly = ListAssembly()
     private let navigator = StandardNavigator()
-   
-    private var appInitialWireframe: Wireframe!
     
     init() {
         setup()
@@ -25,14 +19,13 @@ struct AppDependencies {
     func apply(window: UIWindow) {
         navigator.configure(window: window)
         
-        appInitialWireframe.activate()
+        listAssembly.wireframe.activate()
     }
     
     mutating func setup() {
-        assembleCommonDependencies()
-        configure()
-        setupDependencies()
-        injectDependencies()
+        listAssembly.configure()
+        listAssembly.setupDependencies()
+        listAssembly.injectDependencies()
     }
 }
 
@@ -40,9 +33,6 @@ struct AppDependencies {
 // prepareCommonDependencies - here could be for instance data storage initialization
 // assembleCommonDependencies - add you dependency to the common dependency object
 extension AppDependencies {
-    private func prepareCommonDependencies() {
-     
-    }
     
     private func assembleCommonDependencies() {
         prepareCommonDependencies()
@@ -57,7 +47,7 @@ extension AppDependencies {
     
     // Setup dependencies between assemblies
     private mutating func setupDependencies() {
-        appInitialWireframe = assemblies.list.wireframe
+        
     }
     
     // In configure method of concrete assembly all internal dependencies should be set up.
@@ -66,7 +56,7 @@ extension AppDependencies {
         let mirror = Mirror(reflecting: assemblies)
         for (_, value) in mirror.children {
             guard let assembly = value as? Assembly else { continue }
-            assembly.configure()
+            
         }
     }
     

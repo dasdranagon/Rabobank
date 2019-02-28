@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ListAssembly: Assembly {
+class ListAssembly {
     var wireframe: ListWireframe!
     var presenter: ListPresenter!
     var interactor: DefaultListInteractor!
