@@ -11,7 +11,7 @@ import Foundation
 class DefaultListInteractor: ListInteractor {
     private let source: TextSource
     private let parser: TextParser
-    private let factory = PersonsFactory()
+    private let factory: PersonsFactory = DefaultPersonsFactory()
     
     weak var output: ListInteractorOutput!
     weak var errorHandler: ErrorHandler?
@@ -28,21 +28,21 @@ class DefaultListInteractor: ListInteractor {
                 return
             }
             
-            self?.parse(text: text)
+            self?.process(text: text)
         }
     }
 }
 
 extension DefaultListInteractor {
     
-    func parse(text: String) {
+    func process(text: String) {
         DispatchQueue.global(qos: .utility).async { [weak self] in
             do {
                 guard let rows = try self?.parser.parse(text: text) else {
                     self?.proceedInMainThread(error: .unknown)
                     return
                 }
-                self?.parse(rows: rows)
+                self?.process(rows: rows)
 
             } catch {
                 self?.proceedInMainThread(error: .parsingError)
@@ -50,9 +50,9 @@ extension DefaultListInteractor {
         }
     }
     
-    private func parse(rows: [TextParser.Row] ) {
+    private func process(rows: [TextParser.Row] ) {
         let persons = rows.dropFirst().compactMap { [weak self] row in
-            return self?.factory.person(by: row)
+            return self?.factory.create(row: row)
         }
         
         DispatchQueue.main.async { [weak self] in

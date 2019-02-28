@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6DD430D00D89810F86C506FA /* libPods-Rabobank-Tests-RabobankTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67312B970D0F4AD8EBBE7D6E /* libPods-Rabobank-Tests-RabobankTests.a */; };
-		BC386944222812DD006A1808 /* PersonsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC386943222812DD006A1808 /* PersonsFactory.swift */; };
+		BC386947222814A4006A1808 /* PersonsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC386946222814A4006A1808 /* PersonsFactory.swift */; };
+		BC38694C2228177B006A1808 /* DefaultPersonsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC38694B2228177A006A1808 /* DefaultPersonsFactory.swift */; };
+		BC38694E222818B7006A1808 /* PersonsFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC38694D222818B7006A1808 /* PersonsFactoryTests.swift */; };
 		BC573A4D22203FC700093E94 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A4C22203FC700093E94 /* AppDependencies.swift */; };
 		BC573A4F222040EB00093E94 /* CommonDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A4E222040EB00093E94 /* CommonDependencies.swift */; };
 		BC573A59222041AE00093E94 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A54222041AE00093E94 /* BaseWireframe.swift */; };
@@ -74,7 +76,9 @@
 		59AE56651FAAB9C14F53BA5E /* Pods-Rabobank-Tests-RabobankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rabobank-Tests-RabobankTests.release.xcconfig"; path = "Target Support Files/Pods-Rabobank-Tests-RabobankTests/Pods-Rabobank-Tests-RabobankTests.release.xcconfig"; sourceTree = "<group>"; };
 		64481BDAC24364557CCB792A /* Pods_RabobankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RabobankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67312B970D0F4AD8EBBE7D6E /* libPods-Rabobank-Tests-RabobankTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rabobank-Tests-RabobankTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC386943222812DD006A1808 /* PersonsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonsFactory.swift; sourceTree = "<group>"; };
+		BC386946222814A4006A1808 /* PersonsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsFactory.swift; sourceTree = "<group>"; };
+		BC38694B2228177A006A1808 /* DefaultPersonsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPersonsFactory.swift; sourceTree = "<group>"; };
+		BC38694D222818B7006A1808 /* PersonsFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsFactoryTests.swift; sourceTree = "<group>"; };
 		BC573A4C22203FC700093E94 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		BC573A4E222040EB00093E94 /* CommonDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDependencies.swift; sourceTree = "<group>"; };
 		BC573A54222041AE00093E94 /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
@@ -154,6 +158,15 @@
 				18DAAD16E6B3AB769F5A6792 /* Pods-Rabobank.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BC38694822281629006A1808 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				BC386946222814A4006A1808 /* PersonsFactory.swift */,
+				BC38694B2228177A006A1808 /* DefaultPersonsFactory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		BC573A502220414E00093E94 /* Common */ = {
@@ -243,6 +256,7 @@
 				BC573AA12222A15B00093E94 /* ListInteractorOutputTests.swift */,
 				BC573B072223ECA900093E94 /* ListInteractorTests.swift */,
 				BC573B142223FF2B00093E94 /* CSVTextParserTests.swift */,
+				BC38694D222818B7006A1808 /* PersonsFactoryTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -303,7 +317,6 @@
 			children = (
 				BC573A892222846400093E94 /* ListInteractor.swift */,
 				BC573A8B222284AC00093E94 /* DefaultListInteractor.swift */,
-				BC386943222812DD006A1808 /* PersonsFactory.swift */,
 				BC573B182224090800093E94 /* ListError.swift */,
 			);
 			path = Interactor;
@@ -312,6 +325,7 @@
 		BC573A882222842800093E94 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BC38694822281629006A1808 /* Factory */,
 				BC573A8E222284E900093E94 /* Source */,
 				BC573A8D222284DC00093E94 /* Parser */,
 			);
@@ -585,6 +599,7 @@
 				BC573B052223676F00093E94 /* ListInteractorMock.swift in Sources */,
 				BC573B0E2223ED7400093E94 /* ListInteractorOutputMock.swift in Sources */,
 				BC573B0C2223ED4B00093E94 /* TextParserMock.swift in Sources */,
+				BC38694E222818B7006A1808 /* PersonsFactoryTests.swift in Sources */,
 				BC573B062223677400093E94 /* ListViewMock.swift in Sources */,
 				BC573B042223676800093E94 /* ListEventsHandlerTests.swift in Sources */,
 				BC573B082223ECA900093E94 /* ListInteractorTests.swift in Sources */,
@@ -603,6 +618,7 @@
 				BC573B192224090800093E94 /* ListError.swift in Sources */,
 				BC573A59222041AE00093E94 /* BaseWireframe.swift in Sources */,
 				BC573A5A222041AE00093E94 /* Wireframe.swift in Sources */,
+				BC386947222814A4006A1808 /* PersonsFactory.swift in Sources */,
 				BC573A5E222042FB00093E94 /* Assembly.swift in Sources */,
 				BC573A902222850A00093E94 /* TextSource.swift in Sources */,
 				BC573A94222286B800093E94 /* TextParser.swift in Sources */,
@@ -615,8 +631,8 @@
 				BC573A8C222284AC00093E94 /* DefaultListInteractor.swift in Sources */,
 				BC573A7522204AF300093E94 /* ListTableViewCell.swift in Sources */,
 				BC573A5B222041AE00093E94 /* StandardNavigator.swift in Sources */,
-				BC386944222812DD006A1808 /* PersonsFactory.swift in Sources */,
 				BC573A812220543300093E94 /* ListPresenter.swift in Sources */,
+				BC38694C2228177B006A1808 /* DefaultPersonsFactory.swift in Sources */,
 				BC573A5C222041AE00093E94 /* Navigator.swift in Sources */,
 				BC98EFEB22202DD300607734 /* AppDelegate.swift in Sources */,
 				BC573A7922204BA900093E94 /* ListView.swift in Sources */,
