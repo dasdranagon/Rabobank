@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Rabobank
 //
-//  Created by Dennis Skokov on 22/02/2019.
+//  Created by Dennis Skokov on 28/02/2019.
 //  Copyright © 2019 Dennis Skokov. All rights reserved.
 //
 
@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-    let dependencies = AppDependencies()
+    let listAssembly = ListAssembly()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -22,8 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window?.makeKeyAndVisible()
         }
         
-        dependencies.apply(window: window!)
+        window?.rootViewController = listAssembly.createViewController()
         
         return true
     }
 }
+

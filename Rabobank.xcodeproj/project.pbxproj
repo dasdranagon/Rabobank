@@ -11,15 +11,10 @@
 		BC386947222814A4006A1808 /* PersonsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC386946222814A4006A1808 /* PersonsFactory.swift */; };
 		BC38694C2228177B006A1808 /* DefaultPersonsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC38694B2228177A006A1808 /* DefaultPersonsFactory.swift */; };
 		BC38694E222818B7006A1808 /* PersonsFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC38694D222818B7006A1808 /* PersonsFactoryTests.swift */; };
-		BC573A4D22203FC700093E94 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A4C22203FC700093E94 /* AppDependencies.swift */; };
-		BC573A59222041AE00093E94 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A54222041AE00093E94 /* BaseWireframe.swift */; };
-		BC573A5A222041AE00093E94 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A55222041AE00093E94 /* Wireframe.swift */; };
-		BC573A5B222041AE00093E94 /* StandardNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A57222041AE00093E94 /* StandardNavigator.swift */; };
-		BC573A5C222041AE00093E94 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A58222041AE00093E94 /* Navigator.swift */; };
+		BC386950222827BC006A1808 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC38694F222827BC006A1808 /* AppDelegate.swift */; };
 		BC573A602220431D00093E94 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A5F2220431D00093E94 /* ViewControllerFactory.swift */; };
 		BC573A632220446E00093E94 /* ListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A622220446E00093E94 /* ListAssembly.swift */; };
 		BC573A6C2220468300093E94 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC573A6B2220468300093E94 /* List.storyboard */; };
-		BC573A72222047C500093E94 /* ListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A71222047C500093E94 /* ListWireframe.swift */; };
 		BC573A7522204AF300093E94 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A7422204AF300093E94 /* ListTableViewCell.swift */; };
 		BC573A7722204B5400093E94 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A7622204B5400093E94 /* ListTableViewController.swift */; };
 		BC573A7922204BA900093E94 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A7822204BA900093E94 /* ListView.swift */; };
@@ -48,7 +43,6 @@
 		BC573B192224090800093E94 /* ListError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B182224090800093E94 /* ListError.swift */; };
 		BC573B1B2224263D00093E94 /* issues.csv in Resources */ = {isa = PBXBuildFile; fileRef = BC573B1A2224263D00093E94 /* issues.csv */; };
 		BC573B1E2224449000093E94 /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B1D2224449000093E94 /* Lock.swift */; };
-		BC98EFEB22202DD300607734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98EFEA22202DD300607734 /* AppDelegate.swift */; };
 		BC98EFF222202DD400607734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF122202DD400607734 /* Assets.xcassets */; };
 		BC98EFF522202DD400607734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF322202DD400607734 /* LaunchScreen.storyboard */; };
 		CBBB3498ABCCAF8FC3DE0807 /* libPods-Rabobank.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 490EA4A4640BD0E7D23808B7 /* libPods-Rabobank.a */; };
@@ -77,15 +71,10 @@
 		BC386946222814A4006A1808 /* PersonsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsFactory.swift; sourceTree = "<group>"; };
 		BC38694B2228177A006A1808 /* DefaultPersonsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPersonsFactory.swift; sourceTree = "<group>"; };
 		BC38694D222818B7006A1808 /* PersonsFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsFactoryTests.swift; sourceTree = "<group>"; };
-		BC573A4C22203FC700093E94 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
-		BC573A54222041AE00093E94 /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
-		BC573A55222041AE00093E94 /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
-		BC573A57222041AE00093E94 /* StandardNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardNavigator.swift; sourceTree = "<group>"; };
-		BC573A58222041AE00093E94 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		BC38694F222827BC006A1808 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC573A5F2220431D00093E94 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		BC573A622220446E00093E94 /* ListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAssembly.swift; sourceTree = "<group>"; };
 		BC573A6B2220468300093E94 /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
-		BC573A71222047C500093E94 /* ListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWireframe.swift; sourceTree = "<group>"; };
 		BC573A7422204AF300093E94 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		BC573A7622204B5400093E94 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		BC573A7822204BA900093E94 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -117,7 +106,6 @@
 		BC573B1A2224263D00093E94 /* issues.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = issues.csv; sourceTree = "<group>"; };
 		BC573B1D2224449000093E94 /* Lock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
 		BC98EFE722202DD300607734 /* Rabobank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rabobank.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC98EFEA22202DD300607734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC98EFF122202DD400607734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC98EFF422202DD400607734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC98EFF622202DD400607734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -168,11 +156,8 @@
 		BC573A502220414E00093E94 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				BC573B1C2224446C00093E94 /* Sync */,
-				BC573A52222041AE00093E94 /* Routing */,
-				BC573A822221DB4A00093E94 /* Models */,
-				BC573A9522228B3500093E94 /* ErrorHandling */,
 				BC573A5F2220431D00093E94 /* ViewControllerFactory.swift */,
+				BC573B1D2224449000093E94 /* Lock.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -183,33 +168,6 @@
 				BC573A612220443000093E94 /* List */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		BC573A52222041AE00093E94 /* Routing */ = {
-			isa = PBXGroup;
-			children = (
-				BC573A53222041AE00093E94 /* Wireframe */,
-				BC573A56222041AE00093E94 /* Navigator */,
-			);
-			path = Routing;
-			sourceTree = "<group>";
-		};
-		BC573A53222041AE00093E94 /* Wireframe */ = {
-			isa = PBXGroup;
-			children = (
-				BC573A54222041AE00093E94 /* BaseWireframe.swift */,
-				BC573A55222041AE00093E94 /* Wireframe.swift */,
-			);
-			path = Wireframe;
-			sourceTree = "<group>";
-		};
-		BC573A56222041AE00093E94 /* Navigator */ = {
-			isa = PBXGroup;
-			children = (
-				BC573A57222041AE00093E94 /* StandardNavigator.swift */,
-				BC573A58222041AE00093E94 /* Navigator.swift */,
-			);
-			path = Navigator;
 			sourceTree = "<group>";
 		};
 		BC573A612220443000093E94 /* List */ = {
@@ -228,7 +186,6 @@
 				BC573A6A2220466D00093E94 /* Model */,
 				BC573A692220466100093E94 /* Presenter */,
 				BC573A682220465700093E94 /* View */,
-				BC573A702220479E00093E94 /* Wireframe */,
 				BC573A6B2220468300093E94 /* List.storyboard */,
 			);
 			path = UI;
@@ -237,6 +194,8 @@
 		BC573A65222045E700093E94 /* AppLogic */ = {
 			isa = PBXGroup;
 			children = (
+				BC573A9522228B3500093E94 /* ErrorHandling */,
+				BC573A822221DB4A00093E94 /* Models */,
 				BC573A882222842800093E94 /* Services */,
 				BC573A87222283E500093E94 /* Interactor */,
 			);
@@ -281,14 +240,6 @@
 				BC573A7A22204BDF00093E94 /* ListDisplayItem.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		BC573A702220479E00093E94 /* Wireframe */ = {
-			isa = PBXGroup;
-			children = (
-				BC573A71222047C500093E94 /* ListWireframe.swift */,
-			);
-			path = Wireframe;
 			sourceTree = "<group>";
 		};
 		BC573A7322204AAC00093E94 /* Cells */ = {
@@ -376,14 +327,6 @@
 			path = RabobankTests;
 			sourceTree = "<group>";
 		};
-		BC573B1C2224446C00093E94 /* Sync */ = {
-			isa = PBXGroup;
-			children = (
-				BC573B1D2224449000093E94 /* Lock.swift */,
-			);
-			path = Sync;
-			sourceTree = "<group>";
-		};
 		BC573B1F2224472300093E94 /* List */ = {
 			isa = PBXGroup;
 			children = (
@@ -415,8 +358,7 @@
 		BC98EFE922202DD300607734 /* Rabobank */ = {
 			isa = PBXGroup;
 			children = (
-				BC98EFEA22202DD300607734 /* AppDelegate.swift */,
-				BC573A4C22203FC700093E94 /* AppDependencies.swift */,
+				BC38694F222827BC006A1808 /* AppDelegate.swift */,
 				BC573A502220414E00093E94 /* Common */,
 				BC573A512220415C00093E94 /* Screens */,
 				BC98EFF122202DD400607734 /* Assets.xcassets */,
@@ -607,11 +549,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC573A4D22203FC700093E94 /* AppDependencies.swift in Sources */,
 				BC573A602220431D00093E94 /* ViewControllerFactory.swift in Sources */,
 				BC573B192224090800093E94 /* ListError.swift in Sources */,
-				BC573A59222041AE00093E94 /* BaseWireframe.swift in Sources */,
-				BC573A5A222041AE00093E94 /* Wireframe.swift in Sources */,
 				BC386947222814A4006A1808 /* PersonsFactory.swift in Sources */,
 				BC573A902222850A00093E94 /* TextSource.swift in Sources */,
 				BC573A94222286B800093E94 /* TextParser.swift in Sources */,
@@ -623,15 +562,12 @@
 				BC573A7B22204BDF00093E94 /* ListDisplayItem.swift in Sources */,
 				BC573A8C222284AC00093E94 /* DefaultListInteractor.swift in Sources */,
 				BC573A7522204AF300093E94 /* ListTableViewCell.swift in Sources */,
-				BC573A5B222041AE00093E94 /* StandardNavigator.swift in Sources */,
 				BC573A812220543300093E94 /* ListPresenter.swift in Sources */,
 				BC38694C2228177B006A1808 /* DefaultPersonsFactory.swift in Sources */,
-				BC573A5C222041AE00093E94 /* Navigator.swift in Sources */,
-				BC98EFEB22202DD300607734 /* AppDelegate.swift in Sources */,
 				BC573A7922204BA900093E94 /* ListView.swift in Sources */,
-				BC573A72222047C500093E94 /* ListWireframe.swift in Sources */,
 				BC573B1E2224449000093E94 /* Lock.swift in Sources */,
 				BC573A9722228B5600093E94 /* ErrorHandler.swift in Sources */,
+				BC386950222827BC006A1808 /* AppDelegate.swift in Sources */,
 				BC573A632220446E00093E94 /* ListAssembly.swift in Sources */,
 				BC573A9922228D7400093E94 /* CSVTextParser.swift in Sources */,
 			);
