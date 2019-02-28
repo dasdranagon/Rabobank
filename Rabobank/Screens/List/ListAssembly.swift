@@ -9,10 +9,10 @@
 import UIKit
 
 class ListAssembly {
-    var presenter: ListPresenter!
-    var interactor: DefaultListInteractor!
+    let presenter: ListPresenter
+    let interactor: DefaultListInteractor
     
-    func configure() {
+    init() {
         let source = BundleTextSource(resource: "issues", ofType: "csv")
         let parser = CSVTextParser()
         
@@ -32,7 +32,8 @@ extension ListAssembly: ViewControllerFactory {
         viewController.evensHandler = presenter
         interactor.errorHandler = viewController
         
-        return viewController
+        let navigationController = UINavigationController(rootViewController: viewController)
+        return navigationController
     }
     
     private func initialControllerFromStoryboard() -> UIViewController {
