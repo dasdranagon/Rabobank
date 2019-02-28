@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6DD430D00D89810F86C506FA /* libPods-Rabobank-Tests-RabobankTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67312B970D0F4AD8EBBE7D6E /* libPods-Rabobank-Tests-RabobankTests.a */; };
+		BC386944222812DD006A1808 /* PersonsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC386943222812DD006A1808 /* PersonsFactory.swift */; };
 		BC573A4D22203FC700093E94 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A4C22203FC700093E94 /* AppDependencies.swift */; };
 		BC573A4F222040EB00093E94 /* CommonDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A4E222040EB00093E94 /* CommonDependencies.swift */; };
 		BC573A59222041AE00093E94 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A54222041AE00093E94 /* BaseWireframe.swift */; };
@@ -73,6 +74,7 @@
 		59AE56651FAAB9C14F53BA5E /* Pods-Rabobank-Tests-RabobankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rabobank-Tests-RabobankTests.release.xcconfig"; path = "Target Support Files/Pods-Rabobank-Tests-RabobankTests/Pods-Rabobank-Tests-RabobankTests.release.xcconfig"; sourceTree = "<group>"; };
 		64481BDAC24364557CCB792A /* Pods_RabobankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RabobankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67312B970D0F4AD8EBBE7D6E /* libPods-Rabobank-Tests-RabobankTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rabobank-Tests-RabobankTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC386943222812DD006A1808 /* PersonsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonsFactory.swift; sourceTree = "<group>"; };
 		BC573A4C22203FC700093E94 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		BC573A4E222040EB00093E94 /* CommonDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDependencies.swift; sourceTree = "<group>"; };
 		BC573A54222041AE00093E94 /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 			children = (
 				BC573A892222846400093E94 /* ListInteractor.swift */,
 				BC573A8B222284AC00093E94 /* DefaultListInteractor.swift */,
+				BC386943222812DD006A1808 /* PersonsFactory.swift */,
 				BC573B182224090800093E94 /* ListError.swift */,
 			);
 			path = Interactor;
@@ -612,6 +615,7 @@
 				BC573A8C222284AC00093E94 /* DefaultListInteractor.swift in Sources */,
 				BC573A7522204AF300093E94 /* ListTableViewCell.swift in Sources */,
 				BC573A5B222041AE00093E94 /* StandardNavigator.swift in Sources */,
+				BC386944222812DD006A1808 /* PersonsFactory.swift in Sources */,
 				BC573A812220543300093E94 /* ListPresenter.swift in Sources */,
 				BC573A5C222041AE00093E94 /* Navigator.swift in Sources */,
 				BC98EFEB22202DD300607734 /* AppDelegate.swift in Sources */,
