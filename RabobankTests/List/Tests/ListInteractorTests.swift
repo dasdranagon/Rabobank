@@ -78,14 +78,6 @@ class ListInteractorTests: QuickSpec {
                         interactor.fetch()
                     }
                     
-                    it("proceeds en error") {
-                        waitUntil { done in
-                            sleep(1)
-                            done()
-                            expect(errorHandler.error).notTo(beNil())
-                        }
-                    }
-                    
                     it("proceeds en empty array in output") {
                         expect(output.items?.count).toEventually(equal(0))
                     }
@@ -113,23 +105,6 @@ class ListInteractorTests: QuickSpec {
                     
                     it("parses rows in person objects") {
                         expect(output.items?.first).toEventually(equal(parsedPerson))
-                    }
-                    
-                    /// More detailed parsing tests
-                    it("parses first name") {
-                        expect(output.items?.first?.firstName).toEventually(equal("Jon"))
-                    }
-                    
-                    it("parses surname") {
-                        expect(output.items?.first?.surname).toEventually(equal("Doe"))
-                    }
-                    
-                    it("parses issues count") {
-                        expect(output.items?.first?.issueCount).toEventually(equal(5))
-                    }
-                    
-                    it("parses date of birdth") {
-                        expect(output.items?.first?.dateOfBirth).toEventually(equal(date))
                     }
                 }
             }

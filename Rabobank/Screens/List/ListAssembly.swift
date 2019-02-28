@@ -8,13 +8,11 @@
 
 import UIKit
 
-class ListAssembly: Assembly {
-    var wireframe: ListWireframe!
-    var presenter: ListPresenter!
-    var interactor: DefaultListInteractor!
+class ListAssembly {
+    let presenter: ListPresenter
+    let interactor: DefaultListInteractor
     
-    func configure() {
-        let navigator = dependencies.navigator
+    init() {
         let source = BundleTextSource(resource: "issues", ofType: "csv")
         let parser = CSVTextParser()
         
@@ -23,9 +21,6 @@ class ListAssembly: Assembly {
         presenter = ListPresenter()
         presenter.interactor = interactor
         interactor.output = presenter
-        
-        wireframe = ListWireframe(navigator: navigator)
-        wireframe.viewControllerFactory = self
     }
 }
 
@@ -37,6 +32,13 @@ extension ListAssembly: ViewControllerFactory {
         viewController.evensHandler = presenter
         interactor.errorHandler = viewController
         
-        return viewController
+        let navigationController = UINavigationController(rootViewController: viewController)
+        return navigationController
+    }
+    
+    private func initialControllerFromStoryboard() -> UIViewController {
+        let bundle = Bundle(for: type(of: self))
+        let storyboard = UIStoryboard(name: "List", bundle: bundle)
+        return storyboard.instantiateInitialViewController()!
     }
 }
