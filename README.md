@@ -21,7 +21,7 @@ This changes make a bit difficult to extend project and add for instance new scr
 ## Project structure
 
 Project structure reflects the used architecture approach.
-In the root of the project, there are three folders: **Model**, **View** and **Presenter* (**MVP**).  AppDelegate and ListAssembly (file with all dependencies) files also located in the root folder. 
+In the root of the project, there are three folders: **Model**, **View** and **Presenter** (**MVP**).  AppDelegate and ListAssembly (file with all dependencies) files also located in the root folder. 
 
 ## Unit Testing
 
