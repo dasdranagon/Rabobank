@@ -162,24 +162,6 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		BC573A512220415C00093E94 /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-				BC573A612220443000093E94 /* List */,
-			);
-			path = Screens;
-			sourceTree = "<group>";
-		};
-		BC573A612220443000093E94 /* List */ = {
-			isa = PBXGroup;
-			children = (
-				BC573A65222045E700093E94 /* AppLogic */,
-				BC573A64222045DB00093E94 /* UI */,
-				BC573A622220446E00093E94 /* ListAssembly.swift */,
-			);
-			path = List;
-			sourceTree = "<group>";
-		};
 		BC573A64222045DB00093E94 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,8 +341,10 @@
 			isa = PBXGroup;
 			children = (
 				BC38694F222827BC006A1808 /* AppDelegate.swift */,
+				BC573A65222045E700093E94 /* AppLogic */,
+				BC573A64222045DB00093E94 /* UI */,
+				BC573A622220446E00093E94 /* ListAssembly.swift */,
 				BC573A502220414E00093E94 /* Common */,
-				BC573A512220415C00093E94 /* Screens */,
 				BC98EFF122202DD400607734 /* Assets.xcassets */,
 				BC573B1A2224263D00093E94 /* issues.csv */,
 				BC98EFF322202DD400607734 /* LaunchScreen.storyboard */,
