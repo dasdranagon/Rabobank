@@ -1,5 +1,5 @@
 //
-//  ListInteractorOutputTests.swift
+//  ListDataSourceOutputTests.swift
 //  RabobankTests
 //
 //  Created by Dennis Skokov on 24/02/2019.
@@ -11,7 +11,7 @@ import Quick
 
 @testable import Rabobank
 
-class ListInteractorOutputTests: QuickSpec {
+class ListDataSourceOutputTests: QuickSpec {
     override func spec() {
         var presenter: ListPresenter!
         var view: ListViewMock!

@@ -10,7 +10,7 @@ import Foundation
 
 class ListPresenter {
     weak var view: ListView!
-    weak var interactor: ListInteractor!
+    weak var dataSource: ListDataSource!
     
     private let loadingLock = Lock()
     
@@ -22,7 +22,7 @@ class ListPresenter {
     }()
 }
 
-extension ListPresenter: ListInteractorOutput {
+extension ListPresenter: ListDataSourceOutput {
     func update(items: [Person]) {
         let displayItems = items.compactMap { [weak self] in self?.displayItem(for: $0) }
         view.update(items: displayItems)
@@ -53,7 +53,7 @@ extension ListPresenter: ListEventsHandler {
     private func load() {
         loadingLock.lock { [weak self] in
             self?.view.processing(show: true)
-            self?.interactor.fetch()
+            self?.dataSource.fetch()
         }
     }
 }

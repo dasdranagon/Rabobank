@@ -1,5 +1,5 @@
 //
-//  ListInteractorMock.swift
+//  ListDataSourceMock.swift
 //  RabobankTests
 //
 //  Created by Dennis Skokov on 24/02/2019.
@@ -8,7 +8,7 @@
 
 @testable import Rabobank
 
-class ListInteractorMock: ListInteractor {
+class ListDataSourceMock: ListDataSource {
     var fetchWasCalled = false
     func fetch() {
         fetchWasCalled = true
