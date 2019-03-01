@@ -14,7 +14,7 @@ class ListTableViewController: UITableViewController {
         static let estimatedRowHeight = CGFloat(64.0)
     }
     
-    weak var evensHandler: ListEventsHandler!
+    weak var evensHandler: ListEventsHandler?
 
     private var itemsList: [ListDisplayItem] = []
     
@@ -27,7 +27,7 @@ class ListTableViewController: UITableViewController {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = Constants.estimatedRowHeight
         
-        evensHandler.ready()
+        evensHandler?.ready()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -51,7 +51,7 @@ class ListTableViewController: UITableViewController {
 
 extension ListTableViewController {
     @objc func refresh() {
-        evensHandler.refresh()
+        evensHandler?.refresh()
     }
 }
 

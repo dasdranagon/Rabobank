@@ -197,9 +197,9 @@
 		BC573A692220466100093E94 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				BC573A7A22204BDF00093E94 /* ListDisplayItem.swift */,
-				BC573A7E222053A500093E94 /* ListEventsHandler.swift */,
 				BC573A802220543300093E94 /* ListPresenter.swift */,
+				BC573A7E222053A500093E94 /* ListEventsHandler.swift */,
+				BC573A7A22204BDF00093E94 /* ListDisplayItem.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";

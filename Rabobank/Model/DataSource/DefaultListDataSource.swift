@@ -13,7 +13,7 @@ class DefaultListDataSource: ListDataSource {
     private let parser: TextParser
     private let factory: PersonsFactory = DefaultPersonsFactory()
     
-    weak var output: ListDataSourceOutput!
+    weak var output: ListDataSourceOutput?
     weak var errorHandler: ErrorHandler?
     
     init(source: TextSource, parser: TextParser) {
@@ -70,10 +70,10 @@ extension DefaultListDataSource {
 extension DefaultListDataSource {
     func proceed(error: ListError) {
         errorHandler?.proceed(error: error)
-        output.update(items: [])
+        output?.update(items: [])
     }
     
     func proceed(persons: [Person]) {
-        output.update(items: persons)
+        output?.update(items: persons)
     }
 }
