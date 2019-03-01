@@ -1,5 +1,5 @@
 //
-//  ListInteractorTests.swift
+//  ListDataSourceTests.swift
 //  RabobankTests
 //
 //  Created by Dennis Skokov on 25/02/2019.
@@ -11,10 +11,10 @@ import Quick
 
 @testable import Rabobank
 
-class ListInteractorTests: QuickSpec {
+class ListDataSourceTests: QuickSpec {
     override func spec() {
-        var interactor: DefaultListInteractor!
-        var output: ListInteractorOutputMock!
+        var dataSource: DefaultListDataSource!
+        var output: ListDataSourceOutputMock!
         var errorHandler: ErrorHandlerMock!
         var source: TextSourceMock!
         var parser: TextParserMock!
@@ -22,18 +22,18 @@ class ListInteractorTests: QuickSpec {
         beforeEach {
             source = TextSourceMock()
             parser = TextParserMock()
-            output = ListInteractorOutputMock()
+            output = ListDataSourceOutputMock()
             errorHandler = ErrorHandlerMock()
             
-            interactor = DefaultListInteractor(source: source, parser: parser)
-            interactor.output = output
-            interactor.errorHandler = errorHandler
+            dataSource = DefaultListDataSource(source: source, parser: parser)
+            dataSource.output = output
+            dataSource.errorHandler = errorHandler
         }
         
         describe("fetch") {
             context("common") {
                 beforeEach {
-                    interactor.fetch()
+                    dataSource.fetch()
                 }
                 
                 it("reads data from source") {
@@ -44,7 +44,7 @@ class ListInteractorTests: QuickSpec {
             context("not able to read text") {
                 beforeEach {
                     source.textToReturn = nil
-                    interactor.fetch()
+                    dataSource.fetch()
                 }
                 
                 it("proceeds en error") {
@@ -62,7 +62,7 @@ class ListInteractorTests: QuickSpec {
                     beforeEach {
                         source.textToReturn = text
                         parser.rowsToReturn = [["", "", "", ""]]
-                        interactor.fetch()
+                        dataSource.fetch()
                     }
                     
                     it("passes text to the parser") {
@@ -75,7 +75,7 @@ class ListInteractorTests: QuickSpec {
                     beforeEach {
                         source.textToReturn = text
                         parser.error = error
-                        interactor.fetch()
+                        dataSource.fetch()
                     }
                     
                     it("proceeds en empty array in output") {
@@ -96,7 +96,7 @@ class ListInteractorTests: QuickSpec {
                     beforeEach {
                         source.textToReturn = text
                         parser.rowsToReturn = parsedObject
-                        interactor.fetch()
+                        dataSource.fetch()
                     }
                     
                     it("skips header") {

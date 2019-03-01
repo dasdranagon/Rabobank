@@ -1,5 +1,5 @@
 //
-//  DefaultListInteractor.swift
+//  DefaultListDataSource.swift
 //  Rabobank
 //
 //  Created by Dennis Skokov on 24/02/2019.
@@ -8,12 +8,12 @@
 
 import Foundation
 
-class DefaultListInteractor: ListInteractor {
+class DefaultListDataSource: ListDataSource {
     private let source: TextSource
     private let parser: TextParser
     private let factory: PersonsFactory = DefaultPersonsFactory()
     
-    weak var output: ListInteractorOutput!
+    weak var output: ListDataSourceOutput!
     weak var errorHandler: ErrorHandler?
     
     init(source: TextSource, parser: TextParser) {
@@ -33,7 +33,7 @@ class DefaultListInteractor: ListInteractor {
     }
 }
 
-extension DefaultListInteractor {
+extension DefaultListDataSource {
     
     func process(text: String) {
         DispatchQueue.global(qos: .utility).async { [weak self] in
@@ -67,7 +67,7 @@ extension DefaultListInteractor {
     }
 }
 
-extension DefaultListInteractor {
+extension DefaultListDataSource {
     func proceed(error: ListError) {
         errorHandler?.proceed(error: error)
         output.update(items: [])

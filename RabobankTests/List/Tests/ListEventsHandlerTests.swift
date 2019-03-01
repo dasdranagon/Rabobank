@@ -14,15 +14,15 @@ import Quick
 class ListEventsHandlerTests: QuickSpec {
     override func spec() {
         var presenter: ListPresenter!
-        var interactor: ListInteractorMock!
+        var dataSource: ListDataSourceMock!
         var view: ListViewMock!
 
         beforeEach {
-            interactor = ListInteractorMock()
+            dataSource = ListDataSourceMock()
             view = ListViewMock()
 
             presenter = ListPresenter()
-            presenter.interactor = interactor
+            presenter.dataSource = dataSource
             presenter.view = view
         }
 
@@ -31,12 +31,12 @@ class ListEventsHandlerTests: QuickSpec {
                 presenter.ready()
             }
 
-            it("shows processing indicator") {
+            it("shows processing dataSource") {
                 expect(view.processingIndicatorWasShowed) == true
             }
             
             it("attempts to fetch data") {
-                expect(interactor.fetchWasCalled) == true
+                expect(dataSource.fetchWasCalled) == true
             }
         }
         
@@ -45,12 +45,12 @@ class ListEventsHandlerTests: QuickSpec {
                 presenter.refresh()
             }
             
-            it("shows processing indicator") {
+            it("shows processing dataSource") {
                 expect(view.processingIndicatorWasShowed) == true
             }
             
             it("attempts to fetch data") {
-                expect(interactor.fetchWasCalled) == true
+                expect(dataSource.fetchWasCalled) == true
             }
         }
     }

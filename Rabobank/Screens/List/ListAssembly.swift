@@ -10,17 +10,17 @@ import UIKit
 
 class ListAssembly {
     let presenter: ListPresenter
-    let interactor: DefaultListInteractor
+    let dataSource: DefaultListDataSource
     
     init() {
         let source = BundleTextSource(resource: "issues", ofType: "csv")
         let parser = CSVTextParser()
         
-        interactor = DefaultListInteractor(source: source, parser: parser)
+        dataSource = DefaultListDataSource(source: source, parser: parser)
         
         presenter = ListPresenter()
-        presenter.interactor = interactor
-        interactor.output = presenter
+        presenter.dataSource = dataSource
+        dataSource.output = presenter
     }
 }
 
@@ -30,7 +30,7 @@ extension ListAssembly: ViewControllerFactory {
  
         presenter.view = viewController
         viewController.evensHandler = presenter
-        interactor.errorHandler = viewController
+        dataSource.errorHandler = viewController
         
         let navigationController = UINavigationController(rootViewController: viewController)
         return navigationController
