@@ -24,7 +24,8 @@ class ListAssembly {
     }
 }
 
-extension ListAssembly: ViewControllerFactory {
+// MARK: create ViewController
+extension ListAssembly {
     func createViewController() -> UIViewController {
         let viewController = initialControllerFromStoryboard() as! ListTableViewController
  
