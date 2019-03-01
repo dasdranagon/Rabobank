@@ -173,7 +173,7 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		BC573A65222045E700093E94 /* AppLogic */ = {
+		BC573A65222045E700093E94 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				BC573A9522228B3500093E94 /* ErrorHandling */,
@@ -181,7 +181,7 @@
 				BC573A882222842800093E94 /* Services */,
 				BC573A87222283E500093E94 /* DataSource */,
 			);
-			path = AppLogic;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		BC573A66222045F400093E94 /* Tests */ = {
@@ -342,7 +342,7 @@
 			children = (
 				BC38694F222827BC006A1808 /* AppDelegate.swift */,
 				BC573A502220414E00093E94 /* Common */,
-				BC573A65222045E700093E94 /* AppLogic */,
+				BC573A65222045E700093E94 /* Model */,
 				BC573A64222045DB00093E94 /* UI */,
 				BC573A622220446E00093E94 /* ListAssembly.swift */,
 				BC98EFF122202DD400607734 /* Assets.xcassets */,
