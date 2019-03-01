@@ -322,10 +322,10 @@
 			isa = PBXGroup;
 			children = (
 				BC38694F222827BC006A1808 /* AppDelegate.swift */,
+				BC573A622220446E00093E94 /* ListAssembly.swift */,
 				BC573A65222045E700093E94 /* Model */,
 				BC573A682220465700093E94 /* View */,
 				BC573A692220466100093E94 /* Presenter */,
-				BC573A622220446E00093E94 /* ListAssembly.swift */,
 				BC98EFF122202DD400607734 /* Assets.xcassets */,
 				BC573B1A2224263D00093E94 /* issues.csv */,
 				BC98EFF322202DD400607734 /* LaunchScreen.storyboard */,
