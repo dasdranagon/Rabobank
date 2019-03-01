@@ -163,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				BC573A9522228B3500093E94 /* ErrorHandling */,
-				BC573A822221DB4A00093E94 /* Models */,
+				BC573A822221DB4A00093E94 /* Enities */,
 				BC573A882222842800093E94 /* Services */,
 				BC573A87222283E500093E94 /* DataSource */,
 			);
@@ -212,12 +212,12 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		BC573A822221DB4A00093E94 /* Models */ = {
+		BC573A822221DB4A00093E94 /* Enities */ = {
 			isa = PBXGroup;
 			children = (
 				BC573A832221DB6200093E94 /* Person.swift */,
 			);
-			path = Models;
+			path = Enities;
 			sourceTree = "<group>";
 		};
 		BC573A87222283E500093E94 /* DataSource */ = {
