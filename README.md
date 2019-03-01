@@ -15,7 +15,7 @@ This application was developed as a test assignment for Rabobank and aims to sho
 
 # Architecture
 
-This is an updated simplified implementation. Unlike the old version which was using **VIPER** architecture, current version uses **MVP**, which is more suitable for single view application. 
+This is an updated simplified implementation. Unlike the old version ( see [v1.0](https://github.com/dasdranagon/Rabobank/tree/v1.0)) which was using **VIPER** architecture, current version uses **MVP**, which is more suitable for single view application. 
 This changes make a bit difficult to extend project and add for instance new screen, but reduces dramatically boilerplate code and helps reviewer to get insight on used approaches.
 
 ## Project structure
